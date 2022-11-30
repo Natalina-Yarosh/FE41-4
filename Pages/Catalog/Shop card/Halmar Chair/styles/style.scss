@@ -218,38 +218,69 @@ $font-Poppins: "Poppins", sans-serif;
         font-size: 32px;
         line-height: 48px;
       }
-    }
-    &-btn {
-      display: flex;
-      column-gap: 20px;
-      &--shop {
-        width: 100%;
-        max-width: 219px;
-        font-family: $font-Poppins;
-        font-weight: 500;
-        font-size: 26px;
-        line-height: 39px;
-        color: #f5f5f5;
-        background-color: #272725;
-        border: 0;
-        text-align: center;
-        display: block;
-        padding: 8.5px;
+      &--box{
+        display: flex;
+        border: 1px solid #A3A3A3;
+        column-gap: 20px;
       }
-      &--wish {
-        width: 100%;
-        max-width: 219px;
-        font-family: $font-Poppins;
-        font-weight: 500;
-        font-size: 26px;
-        line-height: 39px;
-        color: #20201c;
-        background-color: #f5f5f5;
-        border: 1px solid #20201c;
-        text-align: center;
-        display: block;
-        padding: 8.5px;
+        &--plus{
+          width: 100%;
+          height: 100%;
+        }
+        &--input{
+          border: none;
+          width: calc((100% - 84px) / 2);
+          padding: 7px 20px;
+          font-family: $font-Poppins;
+          font-weight: 500;
+          font-size: 26px;
+          line-height: 39px;
+          color: #20201C;
+          &::placeholder{
+            font-family: $font-Poppins;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 39px;
+            color: #20201C;
+          }
+        }
+        &--minus{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &-btn {
+        display: flex;
+        column-gap: 20px;
+        &--shop {
+          width: 100%;
+          max-width: 219px;
+          font-family: $font-Poppins;
+          font-weight: 500;
+          font-size: 26px;
+          line-height: 39px;
+          color: #f5f5f5;
+          background-color: #272725;
+          border: 0;
+          text-align: center;
+          display: block;
+          padding: 8.5px;
+        }
+        &--wish {
+          width: 100%;
+          max-width: 219px;
+          font-family: $font-Poppins;
+          font-weight: 500;
+          font-size: 26px;
+          line-height: 39px;
+          color: #20201c;
+          background-color: #f5f5f5;
+          border: 1px solid #20201c;
+          text-align: center;
+          display: block;
+          padding: 8.5px;
+        }
       }
     }
   }
-}
+
