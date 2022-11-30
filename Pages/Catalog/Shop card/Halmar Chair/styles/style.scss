@@ -1,3 +1,5 @@
+$font-Poppins: "Poppins", sans-serif;
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +10,96 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+.header {
+  &__top {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 14px;
+    padding: 16px 0;
+    margin-bottom: 24px;
+
+    &-wrap {
+      background-color: #eeeeee;
+    }
+
+    &-heart {
+      display: flex;
+      align-items: center;
+    }
+
+    &-img {
+      width: 25px;
+      height: 21px;
+    }
+
+    &-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style: none;
+      column-gap: 70px;
+    }
+
+    &-link {
+      font-family: $font-Poppins;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 33px;
+      text-decoration: none;
+      color: #20201c;
+      text-align: center;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+  }
+
+  &__logo {
+    max-width: 120px;
+
+    &-img {
+      width: 100%;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    column-gap: 79px;
+
+    @media (min-width: 1441px) {
+      padding-right: 317px;
+      column-gap: 153px;
+    }
+
+    &-link {
+      font-family: $font-Poppins;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 33px;
+      text-decoration: none;
+      color: #20201c;
+      text-align: center;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    column-gap: 49px;
+  }
+
+  &__button {
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+  }
+}
+
 .cards {
   margin-bottom: 120px;
 }
@@ -79,14 +171,14 @@
   &__description {
     width: calc(100% - 114px - 334px);
     &-title {
-      font-family: "Poppins", sans-serif;
+      font-family: $font-Poppins;
       font-weight: 600;
       font-size: 36px;
       line-height: 43px;
       margin-bottom: 54px;
     }
     &-text {
-      font-family: "Poppins", sans-serif;
+      font-family: $font-Poppins;
       font-weight: 500;
       font-size: 26px;
       line-height: 39px;
@@ -101,14 +193,14 @@
         margin-bottom: 32px;
       }
       &--title {
-        font-family: "Poppins", sans-serif;
+        font-family: $font-Poppins;
         font-weight: 500;
         font-size: 32px;
         line-height: 48px;
         margin-bottom: 20px;
       }
       &--text {
-        font-family: "Poppins", sans-serif;
+        font-family: $font-Poppins;
         font-weight: 400;
         font-size: 22px;
         line-height: 33px;
@@ -121,7 +213,7 @@
       column-gap: 84px;
       margin-bottom: 54px;
       &--quota {
-        font-family: "Poppins", sans-serif;
+        font-family: $font-Poppins;
         font-weight: 700;
         font-size: 32px;
         line-height: 48px;
@@ -133,7 +225,7 @@
       &--shop {
         width: 100%;
         max-width: 219px;
-        font-family: "Poppins", sans-serif;
+        font-family: $font-Poppins;
         font-weight: 500;
         font-size: 26px;
         line-height: 39px;
@@ -147,7 +239,7 @@
       &--wish {
         width: 100%;
         max-width: 219px;
-        font-family: "Poppins", sans-serif;
+        font-family: $font-Poppins;
         font-weight: 500;
         font-size: 26px;
         line-height: 39px;
