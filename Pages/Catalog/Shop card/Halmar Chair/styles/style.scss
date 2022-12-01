@@ -209,11 +209,11 @@ $font-Poppins: "Poppins", sans-serif;
     }
     &-price {
       display: flex;
-      flex-wrap: wrap;
-      row-gap: 54px;
       &--wrap{
         display: flex;
         column-gap: 84px;
+        width: 100%;
+        max-width: 337px
       }
       &--quota {
         font-family: $font-Poppins;
@@ -222,38 +222,43 @@ $font-Poppins: "Poppins", sans-serif;
         line-height: 48px;
       }
       &--box {
-        display: flex;
-        flex-direction: column;
         border: 1px solid #a3a3a3;
-        column-gap: 20px;
+        display: flex;
+        width: 100%;
+        max-width: 144px;
+        padding: 7px 24px;
+        align-items: center;
       }
       &--plus {
         width: 100%;
         height: 100%;
+        display: flex;
+        align-items: center
       }
       &--input {
+        display: inline-block;
         border: none;
-        padding: 7px 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+        max-width: 10px;
         font-family: $font-Poppins;
         font-weight: 500;
         font-size: 26px;
         line-height: 39px;
         color: #20201c;
-        &::placeholder {
-          font-family: $font-Poppins;
-          font-weight: 500;
-          font-size: 26px;
-          line-height: 39px;
-          color: #20201c;
-        }
       }
       &--minus {
         width: 100%;
         height: 100%;
+        display: flex;
+        align-items: center
       }
       &--btns {
         display: flex;
         column-gap: 20px;
+        width: 100%;
+        max-width: 458px
       }
       &--shop {
         font-family: $font-Poppins;

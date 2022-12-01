@@ -209,13 +209,13 @@
 }
 .card__description-price {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 54px;
 }
 .card__description-price--wrap {
   display: flex;
   -moz-column-gap: 84px;
        column-gap: 84px;
+  width: 100%;
+  max-width: 337px;
 }
 .card__description-price--quota {
   font-family: "Poppins", sans-serif;
@@ -224,40 +224,26 @@
   line-height: 48px;
 }
 .card__description-price--box {
-  display: flex;
-  flex-direction: column;
   border: 1px solid #a3a3a3;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  display: flex;
+  width: 100%;
+  max-width: 144px;
+  padding: 7px 24px;
+  align-items: center;
 }
 .card__description-price--plus {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 .card__description-price--input {
+  display: inline-block;
   border: none;
-  padding: 7px 20px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 39px;
-  color: #20201c;
-}
-.card__description-price--input::-moz-placeholder {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 39px;
-  color: #20201c;
-}
-.card__description-price--input:-ms-input-placeholder {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 26px;
-  line-height: 39px;
-  color: #20201c;
-}
-.card__description-price--input::placeholder {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 100%;
+  max-width: 10px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 26px;
@@ -267,11 +253,15 @@
 .card__description-price--minus {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
 }
 .card__description-price--btns {
   display: flex;
   -moz-column-gap: 20px;
        column-gap: 20px;
+  width: 100%;
+  max-width: 458px;
 }
 .card__description-price--shop {
   font-family: "Poppins", sans-serif;
