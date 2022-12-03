@@ -187,10 +187,11 @@ $font-Poppins: "Poppins", sans-serif;
     &-features {
       display: flex;
       column-gap: 89px;
+      margin-bottom: 32px;
     }
     &-feature {
       &:last-child {
-        margin-bottom: 32px;
+        margin-bottom: 0px;
       }
       &--title {
         font-family: $font-Poppins;
@@ -208,16 +209,13 @@ $font-Poppins: "Poppins", sans-serif;
       }
     }
     &-price {
-      display: flex;
       width: 100%;
       max-width: 708px;
       &--wrap {
         display: flex;
         column-gap: 84px;
-      }
-      &--quotas {
-        max-width: 109px;
-        width: 100%;
+        margin-bottom: 54px;
+        align-items: center;
       }
       &--quota {
         font-family: $font-Poppins;

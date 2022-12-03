@@ -189,9 +189,10 @@
   display: flex;
   -moz-column-gap: 89px;
        column-gap: 89px;
+  margin-bottom: 32px;
 }
 .card__description-feature:last-child {
-  margin-bottom: 32px;
+  margin-bottom: 0px;
 }
 .card__description-feature--title {
   font-family: "Poppins", sans-serif;
@@ -208,7 +209,6 @@
   margin-bottom: 12px;
 }
 .card__description-price {
-  display: flex;
   width: 100%;
   max-width: 708px;
 }
@@ -216,10 +216,8 @@
   display: flex;
   -moz-column-gap: 84px;
        column-gap: 84px;
-}
-.card__description-price--quotas {
-  max-width: 109px;
-  width: 100%;
+  margin-bottom: 54px;
+  align-items: center;
 }
 .card__description-price--quota {
   font-family: "Poppins", sans-serif;
