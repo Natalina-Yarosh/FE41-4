@@ -58,6 +58,7 @@ $font-Poppins: "Poppins", sans-serif;
   }
 
   &__bottom {
+    margin-bottom: 135px;
     display: flex;
     justify-content: space-between;
   }
@@ -117,7 +118,6 @@ $font-Poppins: "Poppins", sans-serif;
     }
 }
 .sale{
-    margin-top: 135px;
     max-width: 354px;
     width: 100%;
     display: flex;
@@ -229,8 +229,6 @@ $font-Poppins: "Poppins", sans-serif;
 .catalog{
     margin-bottom: 120px;
     &__wrap{
-        // display: grid;
-        // grid-template-columns: 3fr 9fr;
         display: flex;
         column-gap: 20px;
     }
