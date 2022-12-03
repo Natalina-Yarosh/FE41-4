@@ -106,16 +106,28 @@ $font-Poppins: "Poppins", sans-serif;
 .card {
   display: flex;
   column-gap: 114px;
+  @media (min-width: 1441px){
+    column-gap: 251px;
+  }
   &__wrap {
     width: 100%;
     max-width: 334px;
+    @media (min-width: 1441px){
+      max-width: 494px;
+    }
     &-main {
       position: relative;
       margin-bottom: 33px;
+      @media (min-width: 1441px){
+        margin-bottom: 59px;
+      }
       &::before {
         content: "";
         display: block;
         padding-top: 122%;
+        @media (min-width: 1441px){
+          padding-top: 111%;
+        }
       }
       &--img {
         position: absolute;
@@ -131,13 +143,22 @@ $font-Poppins: "Poppins", sans-serif;
       display: flex;
       column-gap: 20px;
       width: 100%;
+      @media (min-width: 1441px){
+        column-gap: 50px;
+      }
       &--link {
         position: relative;
         width: calc((100% - 20px - 20px) / 3);
+        @media (min-width: 1441px){
+          width: calc((100% - 50px - 50px) / 3);
+        }
         &::before {
           content: "";
           display: block;
           padding-top: 117%;
+          @media (min-width: 1441px){
+            padding-top: 119%;
+          }
         }
         &::after {
           content: "";
@@ -149,12 +170,24 @@ $font-Poppins: "Poppins", sans-serif;
           left: 25%;
           top: 100%;
           transform: translateY(9.7px);
+          @media (min-width: 1441px){
+            left: 50px;
+            top: 100%;
+            transform: translateY(18px);
+            border-bottom: 3px solid transparent;
+          }
         }
         &:hover::after {
           border-bottom: 2px solid #20201c;
+          @media (min-width: 1441px){
+            border-bottom: 3px solid #20201c;
+          }
         }
         &:active::after {
           border-bottom: 2px solid #20201c;
+          @media (min-width: 1441px){
+            border-bottom: 3px solid #20201c;
+          }
         }
       }
       &--img {
@@ -170,12 +203,18 @@ $font-Poppins: "Poppins", sans-serif;
   }
   &__description {
     width: calc(100% - 114px - 334px);
+    @media (min-width: 1441px){
+      width: calc(100% - 251px - 494px);
+    }
     &-title {
       font-family: $font-Poppins;
       font-weight: 600;
       font-size: 36px;
       line-height: 43px;
       margin-bottom: 54px;
+      @media (min-width: 1441px){
+        margin-bottom: 60px;
+      }
     }
     &-text {
       font-family: $font-Poppins;
@@ -188,10 +227,16 @@ $font-Poppins: "Poppins", sans-serif;
       display: flex;
       column-gap: 89px;
       margin-bottom: 32px;
+      @media (min-width: 1441px){
+        display: inline-block;
+      }
     }
     &-feature {
       &:last-child {
         margin-bottom: 0px;
+      }
+      @media (min-width: 1441px){
+        margin-bottom: 32px;
       }
       &--title {
         font-family: $font-Poppins;
@@ -206,16 +251,28 @@ $font-Poppins: "Poppins", sans-serif;
         font-size: 22px;
         line-height: 33px;
         margin-bottom: 12px;
+        @media (min-width: 1441px){
+          display: inline-block;
+          margin-right: 44px;
+          margin-bottom: 0;
+          &:last-child {
+            margin-right: 0px;
+          }
+        }
+      }
+      &--highlight{
+        font-weight: 600;
       }
     }
     &-price {
-      width: 100%;
-      max-width: 708px;
       &--wrap {
         display: flex;
         column-gap: 84px;
         margin-bottom: 54px;
         align-items: center;
+        @media (min-width: 1441px){
+          margin-bottom: 60px;
+        }
       }
       &--quota {
         font-family: $font-Poppins;
@@ -263,8 +320,6 @@ $font-Poppins: "Poppins", sans-serif;
       &--btns {
         display: flex;
         column-gap: 20px;
-        width: 100%;
-        max-width: 458px;
       }
       &--shop {
         font-family: $font-Poppins;
