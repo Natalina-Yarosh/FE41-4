@@ -134,9 +134,8 @@
 .questions__main-wrap--active::before {
   content: "";
   width: 32px;
-  height: 32px;
+  height: 33px;
   display: block;
-  border: transparent;
   top: 50%;
   left: 100%;
   position: absolute;
@@ -172,9 +171,8 @@
 .questions__main-wrap--title::before {
   content: "";
   width: 32px;
-  height: 32px;
+  height: 33px;
   display: block;
-  border: transparent;
   top: 50%;
   left: 100%;
   position: absolute;
@@ -218,4 +216,7 @@
   font-size: 36px;
   line-height: 48px;
   color: #FFFFFF;
+}
+.questions__contact-text--link {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
