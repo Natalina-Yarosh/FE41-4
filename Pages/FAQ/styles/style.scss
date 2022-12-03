@@ -129,26 +129,28 @@ $font-Poppins: "Poppins", sans-serif;
         background-color: #F5F5F5;
         padding: 120px 0;
         &-wrap{
-            &--btns{
-                display: flex;
-                justify-content: space-between;
+            &--active{
                 border-top: 1px solid #20201C;
-            }
-            &--btn{
-                width: 100%;
-                border: 0;
-                background-color: #F5F5F5;
                 font-family: 'Poppins', sans-serif;
                 font-weight: 500;
                 font-size: 32px;
                 line-height: 48px;
-                text-align: left;
                 padding: 20px 0;
-            }
-            &--expand{
-                width: 32px;
-                border: 0;
-                background-color: #F5F5F5;
+                position: relative;
+                &::before{
+                  content: '';
+                  width: 32px;
+                  height: 32px;
+                  display: block;
+                  border: transparent;
+                  top: 50%;
+                  left: 100%;
+                  position: absolute;
+                  transform: translate(-250%, -50%);
+                  background-image: url(../images/expandbutton.svg);
+                  background-repeat: no-repeat;
+                  background-position: center;
+                }
             }
             &--info{
                 padding: 28px 0 20px;
@@ -165,28 +167,28 @@ $font-Poppins: "Poppins", sans-serif;
                     margin-bottom: 0;
                 }
             }
-        }
-        &-box{
-            &--btns{
-                display: flex;
-                justify-content: space-between;
-                border-bottom: 1px solid #20201C;
-            }
-            &--btn{
-                width: 100%;
-                border: 0;
-                background-color: #F5F5F5;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 500;
-                font-size: 32px;
-                line-height: 48px;
-                text-align: left;
-                padding: 20px 0;
-            }
-            &--expand{
+            &--title{
+              border-bottom: 1px solid #20201C;
+              font-family: 'Poppins', sans-serif;
+              font-weight: 500;
+              font-size: 32px;
+              line-height: 48px;
+              padding: 20px 0;
+              position: relative;
+              &::before{
+                content: '';
                 width: 32px;
-                border: 0;
-                background-color: #F5F5F5;
+                height: 32px;
+                display: block;
+                border: transparent;
+                top: 50%;
+                left: 100%;
+                position: absolute;
+                transform: translate(-250%, -50%);
+                background-image: url(../images/expandbutton.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+              }
             }
         }
     }
