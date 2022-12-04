@@ -100,6 +100,9 @@ $font-Poppins: "Poppins", sans-serif;
 .questions{
     &__top{
         padding: 135px 0;
+        @media (min-width: 1441px) {
+          padding: 147px 0;
+        }
         &-title{
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
@@ -137,6 +140,9 @@ $font-Poppins: "Poppins", sans-serif;
                 line-height: 48px;
                 padding: 20px 0;
                 position: relative;
+                @media (min-width: 1441px) {
+                  border-top: 2px solid #20201C;
+                }
                 &::before{
                   content: '';
                   width: 32px;
@@ -154,6 +160,10 @@ $font-Poppins: "Poppins", sans-serif;
             &--info{
                 padding: 28px 0 20px;
                 border-bottom: 1px solid #20201C;
+                @media (min-width: 1441px) {
+                  padding: 34px 0 32px;
+                  border-bottom: 2px solid #20201C;
+                }
             }
             &--text{
                 font-family: 'Poppins', sans-serif;
@@ -174,6 +184,9 @@ $font-Poppins: "Poppins", sans-serif;
               line-height: 48px;
               padding: 20px 0;
               position: relative;
+              @media (min-width: 1441px) {
+                border-bottom: 2px solid #20201C;
+              }
               &::before{
                 content: '';
                 width: 32px;
@@ -197,6 +210,9 @@ $font-Poppins: "Poppins", sans-serif;
         background-size: cover;
         background-position: center;
         position: relative;
+        @media (min-width: 1441px) {
+          padding: 147px 0;
+        }
         &::before{
             content: '';
             top: 0;
