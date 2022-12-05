@@ -2,4 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1270px;
 }/*# sourceMappingURL=style.css.map */
