@@ -92,8 +92,20 @@
 }
 
 .service {
-  display: grid;
-  grid-template-columns: 60% 40%;
+  position: relative;
+  z-index: 1;
+}
+.service::before {
+  content: "";
+  width: 552px;
+  height: 549px;
+  display: block;
+  top: 9%;
+  left: 63%;
+  position: absolute;
+  background-image: url(../images/table.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .service__content {
   padding-top: 135px;
@@ -152,13 +164,4 @@
   line-height: 39px;
   padding: 8.5px;
   background-color: transparent;
-}
-.service__wrap {
-  background-image: url(../images/table.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
-  transform: translateY(20px);
-  width: 100%;
-  max-width: 552px;
 }/*# sourceMappingURL=style.css.map */
