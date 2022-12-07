@@ -16,7 +16,7 @@
   -moz-column-gap: 14px;
        column-gap: 14px;
   padding: 16px 0;
-  margin-bottom: 24px;
+  margin-bottom: 35px;
 }
 .header__top-wrap {
   background-color: #eeeeee;
@@ -49,7 +49,7 @@
 .header__bottom {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 110px;
+  transform: translateX(4px);
 }
 .header__logo {
   max-width: 120px;
@@ -94,12 +94,11 @@
 
 .cards {
   margin-bottom: 120px;
+  padding-top: 128px;
 }
 
 .card {
   display: flex;
-  -moz-column-gap: 114px;
-       column-gap: 114px;
 }
 @media (min-width: 1441px) {
   .card {
@@ -108,8 +107,10 @@
   }
 }
 .card__wrap {
-  width: 100%;
-  max-width: 334px;
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
 }
 @media (min-width: 1441px) {
   .card__wrap {
@@ -119,6 +120,10 @@
 .card__wrap-main {
   position: relative;
   margin-bottom: 33px;
+  width: 100%;
+  max-width: 334px;
+  margin: 0 auto;
+  transform: translate(-8px, -3px);
 }
 @media (min-width: 1441px) {
   .card__wrap-main {
@@ -151,6 +156,7 @@
   -moz-column-gap: 20px;
        column-gap: 20px;
   width: 100%;
+  justify-content: center;
 }
 @media (min-width: 1441px) {
   .card__wrap-secondary {
@@ -160,7 +166,9 @@
 }
 .card__wrap-secondary--link {
   position: relative;
-  width: calc((100% - 20px - 20px) / 3);
+  width: 100%;
+  max-width: 85px;
+  transform: translateX(-32px);
 }
 @media (min-width: 1441px) {
   .card__wrap-secondary--link {
@@ -185,8 +193,7 @@
   display: inline-block;
   position: absolute;
   left: 25%;
-  top: 100%;
-  transform: translateY(9.7px);
+  top: 110%;
 }
 @media (min-width: 1441px) {
   .card__wrap-secondary--link::after {
@@ -224,7 +231,7 @@
      object-position: center;
 }
 .card__description {
-  width: calc(100% - 114px - 334px);
+  width: 57%;
 }
 @media (min-width: 1441px) {
   .card__description {
@@ -252,9 +259,9 @@
 }
 .card__description-features {
   display: flex;
-  -moz-column-gap: 89px;
-       column-gap: 89px;
-  margin-bottom: 32px;
+  -moz-column-gap: 94px;
+       column-gap: 94px;
+  margin-bottom: 28px;
 }
 @media (min-width: 1441px) {
   .card__description-features {
@@ -300,12 +307,12 @@
   display: flex;
   -moz-column-gap: 84px;
        column-gap: 84px;
-  margin-bottom: 54px;
+  margin-bottom: 51px;
   align-items: center;
 }
 @media (min-width: 1441px) {
   .card__description-price--wrap {
-    margin-bottom: 60px;
+    margin-bottom: 47px;
   }
 }
 .card__description-price--quota {
@@ -340,7 +347,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 26px;
-  line-height: 39px;
+  line-height: 37px;
   color: #20201c;
 }
 .card__description-price--minus {

@@ -1,5 +1,4 @@
 $font-Poppins: "Poppins", sans-serif;
-
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +15,7 @@ $font-Poppins: "Poppins", sans-serif;
     justify-content: flex-end;
     column-gap: 14px;
     padding: 16px 0;
-    margin-bottom: 24px;
+    margin-bottom: 35px;
 
     &-wrap {
       background-color: #eeeeee;
@@ -54,7 +53,7 @@ $font-Poppins: "Poppins", sans-serif;
   &__bottom {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 110px;
+    transform: translateX(4px);
   }
 
   &__logo {
@@ -102,22 +101,29 @@ $font-Poppins: "Poppins", sans-serif;
 
 .cards {
   margin-bottom: 120px;
+  padding-top: 128px;
 }
 .card {
   display: flex;
-  column-gap: 114px;
   @media (min-width: 1441px){
     column-gap: 251px;
   }
   &__wrap {
-    width: 100%;
-    max-width: 334px;
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+
     @media (min-width: 1441px){
       max-width: 494px;
     }
     &-main {
       position: relative;
       margin-bottom: 33px;
+      width: 100%;
+      max-width: 334px;
+      margin: 0 auto;
+      transform: translate(-8px, -3px);
       @media (min-width: 1441px){
         margin-bottom: 59px;
       }
@@ -143,12 +149,15 @@ $font-Poppins: "Poppins", sans-serif;
       display: flex;
       column-gap: 20px;
       width: 100%;
+      justify-content: center;
       @media (min-width: 1441px){
         column-gap: 50px;
       }
       &--link {
         position: relative;
-        width: calc((100% - 20px - 20px) / 3);
+        width: 100%;
+        max-width: 85px;
+        transform: translateX(-32px);
         @media (min-width: 1441px){
           width: calc((100% - 50px - 50px) / 3);
         }
@@ -168,8 +177,8 @@ $font-Poppins: "Poppins", sans-serif;
           display: inline-block;
           position: absolute;
           left: 25%;
-          top: 100%;
-          transform: translateY(9.7px);
+          top: 110%;
+          
           @media (min-width: 1441px){
             left: 50px;
             top: 100%;
@@ -202,7 +211,7 @@ $font-Poppins: "Poppins", sans-serif;
     }
   }
   &__description {
-    width: calc(100% - 114px - 334px);
+    width: 57%;
     @media (min-width: 1441px){
       width: calc(100% - 251px - 494px);
     }
@@ -225,8 +234,8 @@ $font-Poppins: "Poppins", sans-serif;
     }
     &-features {
       display: flex;
-      column-gap: 89px;
-      margin-bottom: 32px;
+      column-gap: 94px;
+      margin-bottom: 28px;
       @media (min-width: 1441px){
         display: inline-block;
       }
@@ -268,10 +277,10 @@ $font-Poppins: "Poppins", sans-serif;
       &--wrap {
         display: flex;
         column-gap: 84px;
-        margin-bottom: 54px;
+        margin-bottom: 51px;
         align-items: center;
         @media (min-width: 1441px){
-          margin-bottom: 60px;
+          margin-bottom: 47px;
         }
       }
       &--quota {
@@ -307,7 +316,7 @@ $font-Poppins: "Poppins", sans-serif;
         font-family: $font-Poppins;
         font-weight: 500;
         font-size: 26px;
-        line-height: 39px;
+        line-height: 37px;
         color: #20201c;
       }
       &--minus {
