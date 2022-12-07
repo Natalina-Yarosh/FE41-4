@@ -8,6 +8,9 @@ $font-Poppins: "Poppins", sans-serif;
   max-width: 1270px;
   margin: 0 auto;
   padding: 0 15px;
+  @media (min-width: 1441px){
+    max-width: 1750px;
+  }
 }
 .header {
   &__top {
@@ -16,6 +19,9 @@ $font-Poppins: "Poppins", sans-serif;
     column-gap: 14px;
     padding: 16px 0;
     margin-bottom: 35px;
+    @media (min-width: 1441px){
+      margin-bottom: 60px;
+    }
 
     &-wrap {
       background-color: #eeeeee;
@@ -73,6 +79,7 @@ $font-Poppins: "Poppins", sans-serif;
     @media (min-width: 1441px) {
       padding-right: 317px;
       column-gap: 153px;
+      transform: translateX(-60px);
     }
 
     &-link {
@@ -102,20 +109,26 @@ $font-Poppins: "Poppins", sans-serif;
 .cards {
   margin-bottom: 120px;
   padding-top: 128px;
+  @media (min-width: 1441px){
+    margin-bottom: 147px;
+    padding-top: 205px;
+  }
 }
 .card {
   display: flex;
   @media (min-width: 1441px){
-    column-gap: 251px;
+    display: grid;
+    grid-template-columns: (1fr minmax(706px, 41%));
   }
+
   &__wrap {
     width: 43%;
     display: flex;
     flex-direction: column;
     row-gap: 23px;
-
     @media (min-width: 1441px){
-      max-width: 494px;
+      row-gap: 59px;
+      margin: 0 auto;
     }
     &-main {
       position: relative;
@@ -125,7 +138,9 @@ $font-Poppins: "Poppins", sans-serif;
       margin: 0 auto;
       transform: translate(-8px, -3px);
       @media (min-width: 1441px){
-        margin-bottom: 59px;
+        margin-bottom: 69px;
+        max-width: 494px;
+        transform: translate(-4px, 5px);
       }
       &::before {
         content: "";
@@ -159,7 +174,8 @@ $font-Poppins: "Poppins", sans-serif;
         max-width: 85px;
         transform: translateX(-32px);
         @media (min-width: 1441px){
-          width: calc((100% - 50px - 50px) / 3);
+          max-width: 141px;
+          transform: translateX(17px);
         }
         &::before {
           content: "";
@@ -180,9 +196,8 @@ $font-Poppins: "Poppins", sans-serif;
           top: 110%;
           
           @media (min-width: 1441px){
-            left: 50px;
-            top: 100%;
-            transform: translateY(18px);
+            left: 27%;
+            top: 115%;
             border-bottom: 3px solid transparent;
           }
         }
@@ -213,7 +228,7 @@ $font-Poppins: "Poppins", sans-serif;
   &__description {
     width: 57%;
     @media (min-width: 1441px){
-      width: calc(100% - 251px - 494px);
+      width: 100%;
     }
     &-title {
       font-family: $font-Poppins;
@@ -222,7 +237,7 @@ $font-Poppins: "Poppins", sans-serif;
       line-height: 43px;
       margin-bottom: 54px;
       @media (min-width: 1441px){
-        margin-bottom: 60px;
+        margin-bottom: 64px;
       }
     }
     &-text {
@@ -231,6 +246,9 @@ $font-Poppins: "Poppins", sans-serif;
       font-size: 26px;
       line-height: 39px;
       margin-bottom: 32px;
+      @media (min-width: 1441px){
+        margin-bottom: 65px;
+      }
     }
     &-features {
       display: flex;
@@ -238,6 +256,7 @@ $font-Poppins: "Poppins", sans-serif;
       margin-bottom: 28px;
       @media (min-width: 1441px){
         display: inline-block;
+        margin-bottom: 31px;
       }
     }
     &-feature {
@@ -262,7 +281,7 @@ $font-Poppins: "Poppins", sans-serif;
         margin-bottom: 12px;
         @media (min-width: 1441px){
           display: inline-block;
-          margin-right: 44px;
+          margin-right: 37px;
           margin-bottom: 0;
           &:last-child {
             margin-right: 0px;
@@ -280,7 +299,7 @@ $font-Poppins: "Poppins", sans-serif;
         margin-bottom: 51px;
         align-items: center;
         @media (min-width: 1441px){
-          margin-bottom: 47px;
+          margin-bottom: 59px;
         }
       }
       &--quota {
@@ -329,6 +348,9 @@ $font-Poppins: "Poppins", sans-serif;
       &--btns {
         display: flex;
         column-gap: 20px;
+        @media (min-width: 1441px){
+          transform: translate(-3px);
+        }
       }
       &--shop {
         font-family: $font-Poppins;
