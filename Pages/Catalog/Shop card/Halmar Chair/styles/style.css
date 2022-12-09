@@ -15,25 +15,48 @@
   }
 }
 
+body {
+  background: #F5F5F5;
+}
+
 .header__top {
   display: flex;
   justify-content: flex-end;
   -moz-column-gap: 14px;
        column-gap: 14px;
+}
+.header__top-wrap {
+  background-color: #eeeeee;
   padding: 16px 0;
   margin-bottom: 35px;
 }
 @media (min-width: 1441px) {
-  .header__top {
+  .header__top-wrap {
     margin-bottom: 60px;
   }
-}
-.header__top-wrap {
-  background-color: #eeeeee;
 }
 .header__top-heart {
   display: flex;
   align-items: center;
+  position: relative;
+}
+.header__top-heart--amount path {
+  fill: #20201C;
+}
+.header__top-heart--amount .header__top-amount {
+  opacity: 1;
+}
+.header__top-amount {
+  opacity: 0;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
 }
 .header__top-img {
   width: 25px;
@@ -59,10 +82,12 @@
 .header__bottom {
   display: flex;
   justify-content: space-between;
-  transform: translateX(4px);
+  -moz-column-gap: 154px;
+       column-gap: 154px;
 }
 .header__logo {
   max-width: 120px;
+  padding-left: 4px;
 }
 .header__logo-img {
   width: 100%;
@@ -76,10 +101,9 @@
 }
 @media (min-width: 1441px) {
   .header__nav {
-    padding-right: 317px;
     -moz-column-gap: 153px;
          column-gap: 153px;
-    transform: translateX(-60px);
+    margin-right: auto;
   }
 }
 .header__nav-link {
@@ -115,39 +139,40 @@
 }
 
 .card {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr minmax(707px, 57%);
 }
 @media (min-width: 1441px) {
   .card {
-    display: grid;
     grid-template-columns: 1fr minmax(706px, 41%);
   }
 }
 .card__wrap {
-  width: 43%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 23px;
+  row-gap: 33px;
+  padding-left: 5px;
+  margin-top: 5px;
 }
 @media (min-width: 1441px) {
   .card__wrap {
+    max-width: 549px;
     row-gap: 59px;
     margin: 0 auto;
+    padding-left: 24px;
+    margin-top: 2px;
   }
 }
 .card__wrap-main {
   position: relative;
-  margin-bottom: 33px;
   width: 100%;
   max-width: 334px;
   margin: 0 auto;
-  transform: translate(-8px, -3px);
 }
 @media (min-width: 1441px) {
   .card__wrap-main {
-    margin-bottom: 69px;
     max-width: 494px;
-    transform: translate(-4px, 5px);
   }
 }
 .card__wrap-main::before {
@@ -188,12 +213,10 @@
   position: relative;
   width: 100%;
   max-width: 85px;
-  transform: translateX(-32px);
 }
 @media (min-width: 1441px) {
   .card__wrap-secondary--link {
     max-width: 141px;
-    transform: translateX(17px);
   }
 }
 .card__wrap-secondary--link::before {
@@ -251,7 +274,7 @@
      object-position: center;
 }
 .card__description {
-  width: 57%;
+  width: 100%;
 }
 @media (min-width: 1441px) {
   .card__description {
@@ -275,11 +298,13 @@
   font-weight: 500;
   font-size: 26px;
   line-height: 39px;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
+  max-width: 707px;
 }
 @media (min-width: 1441px) {
   .card__description-text {
-    margin-bottom: 65px;
+    margin-bottom: 31px;
+    max-width: 687px;
   }
 }
 .card__description-features {
@@ -333,12 +358,12 @@
   display: flex;
   -moz-column-gap: 84px;
        column-gap: 84px;
-  margin-bottom: 51px;
+  margin-bottom: 54px;
   align-items: center;
 }
 @media (min-width: 1441px) {
   .card__description-price--wrap {
-    margin-bottom: 59px;
+    margin-bottom: 57px;
   }
 }
 .card__description-price--quota {
@@ -354,8 +379,13 @@
   display: flex;
   width: 100%;
   max-width: 144px;
-  padding: 7px 24px;
+  padding: 6px 24px;
   align-items: center;
+}
+@media (min-width: 1441px) {
+  .card__description-price--box {
+    padding: 5px 24px;
+  }
 }
 .card__description-price--plus {
   width: 100%;
@@ -389,7 +419,7 @@
 }
 @media (min-width: 1441px) {
   .card__description-price--btns {
-    transform: translate(-3px);
+    margin-left: -5px;
   }
 }
 .card__description-price--shop {
@@ -411,7 +441,7 @@
   font-size: 26px;
   line-height: 39px;
   color: #20201c;
-  background-color: #f5f5f5;
+  background-color: transparent;
   border: 1px solid #20201c;
   text-align: center;
   padding: 8.5px;
