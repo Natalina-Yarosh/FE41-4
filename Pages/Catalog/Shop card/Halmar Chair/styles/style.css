@@ -105,12 +105,12 @@
 
 .cards {
   margin-bottom: 120px;
-  padding-top: 128px;
+  margin-top: 128px;
 }
 @media (min-width: 1441px) {
   .cards {
     margin-bottom: 147px;
-    padding-top: 205px;
+    margin-top: 205px;
   }
 }
 
