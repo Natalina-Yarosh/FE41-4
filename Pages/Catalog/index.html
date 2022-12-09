@@ -7,10 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
 <link rel="stylesheet" href="/Pages/Catalog/style/style.css">
     <title>Document</title>
 </head>
-<body>
+<body> 
     <header class="header">
         <div class="header__top-wrap">
         <div class="container">
@@ -76,54 +80,67 @@
         </div>
       </div>
       </header>
-    <div class="sales">
-        <div class="container">
-            <div class="sales__wrap">
-                <a class="sales__switch--wrap"href="">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 26L10 16L20 6" stroke="#20201C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg> 
-                </a>
-                <div class="sale">
-                    <h2 class="sale__title">Sale</h2>
-                    <p class="sale__subtitle">Comfortable dining chairs in three colors</p>
-                    <div class="sale__price">
-                        <p class="sale__cost">$456.99</p>
-                        <p class="sale__discount">$399.99</p>
-                    </div>
-                    <button class="sale__btn">Shop now</button>
+      <div class="swiper mySwiper container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide mySwiper_slide">
+            <div class="sale">
+                <h2 class="sale__title">Sale</h2>
+                <p class="sale__subtitle">Comfortable dining chairs in three colors</p>
+                <div class="sale__price">
+                    <p class="sale__cost">$456.99</p>
+                    <p class="sale__discount">$399.99</p>
                 </div>
-                <div class="sale__items">
-                    <div class="sale__items--wrap">
-                        <div class="sale__item--wrap">
-                            <img class="sale__item" src="/Pages/Catalog/images/chair1.jpg" alt="">
-                        </div>
-                        <div class="sale__item--wrap">
-                            <img class="sale__item" src="/Pages/Catalog/images/chair2.jpg" alt="">
-                        </div>
-                        <div class="sale__item--wrap">
-                            <img class="sale__item" src="/Pages/Catalog/images/chair3.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="sale__navigations">
-                        <a class="sale__navigation--wrap" href="">
- 
-                        </a>
-                        <a class="sale__navigation--wrap" href="">
-                        </a>
-                        <a class="sale__navigation--wrap" href="">
-                        </a>
-                    </div>
-                </div>
-                <a class="sale__checkout--wrap" href="">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 6L22 16L12 26" stroke="#20201C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                        
-                </a>
+                <button class="sale__btn">Shop now</button>
             </div>
+            <div class="sale__item--wrap">
+                <img class="sale__item" src="/Pages/Catalog/images/sale1.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide mySwiper_slide">
+            <div class="sale">
+                <h2 class="sale__title">Sale</h2>
+                <p class="sale__subtitle">Modern chair in two colors with tree legs</p>
+                <div class="sale__price">
+                    <p class="sale__cost">$240.99</p>
+                    <p class="sale__discount">$210.99</p>
+                </div>
+                <button class="sale__btn">Shop now</button>
+            </div>
+            <div class="sale__item--wrap">
+                <img class="sale__item" src="/Pages/Catalog/images/sale2.png" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide mySwiper_slide">
+            <div class="sale">
+                <h2 class="sale__title">Sale</h2>
+                <p class="sale__subtitle">Shell chair with finger-effect upholstery</p>
+                <div class="sale__price">
+                    <p class="sale__cost">$578.80</p>
+                    <p class="sale__discount">$517.80</p>
+                </div>
+                <button class="sale__btn">Shop now</button>
+            </div>
+            <div class="sale__item--wrap">
+                <img class="sale__item" src="/Pages/Catalog/images/sale3.png" alt="">
+            </div>
+          </div>
         </div>
-    </div>
+        <div class="swiper-button-next">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 6.03906L22 15.9874L12 25.9357" stroke="#20201C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+        </div>
+        <div class="swiper-button-prev">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 25.9355L10 15.9872L20 6.03891" stroke="#20201C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+
     <div class="catalog">
         <div class="container">
             <div class="catalog__wrap">
@@ -199,6 +216,9 @@
                             </a>
                             <p class="catalog__filter--header--title">Price range</p>
                         </div>
+                        <div class="catalog__filter--range">
+                            <img class="range"src="/Pages/Catalog/images/range.png" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="catalog__content">
@@ -214,83 +234,100 @@
                         </div>
                     </div>
                     <div class="catalog__content--wrap">
-                        <div class="catalog__content--item">
-                            <a href="" class="catalog__content--item--img--wrap">
+                        <a href="" class="catalog__content--item">
+                            <div class="catalog__content--item--img--wrap">
                                 <img class="catalog__content--item--img" src="/Pages/Catalog/images/chair2.1.png" alt="">
-                            </a>
+                            </div>
                             <p class="catalog__content--item--title">Halmar Chair</p>
                             <p class="catalog__content--item--size">105x48x56</p>
                             <p class="catalog__content--item--price">$87.90</p>
-                        </div>
-                        <div class="catalog__content--item">
-                            <a href="" class="catalog__content--item--img--wrap">
+                        </a>
+                        <a href="" class="catalog__content--item">
+                            <div class="catalog__content--item--img--wrap">
                                 <img class="catalog__content--item--img" src="/Pages/Catalog/images/2.2.png" alt="">
-                            </a>
-                            <p class="catalog__content--item--title">Halmar Chair</p>
+                            </div>
+                            <p class="catalog__content--item--title">Kira Chair</p>
                             <p class="catalog__content--item--size">105x48x56</p>
-                            <p class="catalog__content--item--price">$87.90</p>
-                        </div>
-                        <div class="catalog__content--item">
-                            <a href="" class="catalog__content--item--img--wrap">
+                            <p class="catalog__content--item--price">$88.90</p>
+                        </a>
+                        <a href="" class="catalog__content--item">
+                            <div class="catalog__content--item--img--wrap">
                                 <img class="catalog__content--item--img" src="/Pages/Catalog/images/2.3.png" alt="">
-                            </a>
-                            <p class="catalog__content--item--title">Halmar Chair</p>
-                            <p class="catalog__content--item--size">105x48x56</p>
-                            <p class="catalog__content--item--price">$87.90</p>
-                        </div>
-                        <div class="catalog__content--item">
-                            <a href="" class="catalog__content--item--img--wrap">
+                            </div>
+                            <p class="catalog__content--item--title">Ashby Dining Chair</p>
+                            <p class="catalog__content--item--size">102x46x56</p>
+                            <p class="catalog__content--item--price">$95.40</p>
+                        </a>
+                        <a href="" class="catalog__content--item">
+                            <div class="catalog__content--item--img--wrap">
                                 <img class="catalog__content--item--img" src="/Pages/Catalog/images/2.4.png" alt="">
-                            </a>
-                            <p class="catalog__content--item--title">Halmar Chair</p>
-                            <p class="catalog__content--item--size">105x48x56</p>
-                            <p class="catalog__content--item--price">$87.90</p>
-                        </div>
-                        <div class="catalog__content--item">
-                            <a href="" class="catalog__content--item--img--wrap">
+                            </div>
+                            <p class="catalog__content--item--title">Masculo Dining Chair</p>
+                            <p class="catalog__content--item--size">108x51x57</p>
+                            <p class="catalog__content--item--price">$97.90</p>
+                        </a>
+                        <a href="" class="catalog__content--item">
+                            <div class="catalog__content--item--img--wrap">
                                 <img class="catalog__content--item--img" src="/Pages/Catalog/images/2.5.png" alt="">
-                            </a>
-                            <p class="catalog__content--item--title">Halmar Chair</p>
-                            <p class="catalog__content--item--size">105x48x56</p>
-                            <p class="catalog__content--item--price">$87.90</p>
-                        </div>
-                        <div class="catalog__content--item">
-                            <a href="" class="catalog__content--item--img--wrap">
+                            </div>
+                            <p class="catalog__content--item--title">Osmo Armchair</p>
+                            <p class="catalog__content--item--size">87x67x78</p>
+                            <p class="catalog__content--item--price">$120.99</p>
+                        </a>
+                        <a href="" class="catalog__content--item">
+                            <div href="" class="catalog__content--item--img--wrap">
                                 <img class="catalog__content--item--img" src="/Pages/Catalog/images/2.6.png" alt="">
-                            </a>
-                            <p class="catalog__content--item--title">Halmar Chair</p>
-                            <p class="catalog__content--item--size">105x48x56</p>
-                            <p class="catalog__content--item--price">$87.90</p>
-                        </div>
-                        <div class="catalog__content--item">
-                            <a href="" class="catalog__content--item--img--wrap">
+                            </div>
+                            <p class="catalog__content--item--title">Tamashii Chair</p>
+                            <p class="catalog__content--item--size">110x58x63</p>
+                            <p class="catalog__content--item--price">$135.40</p>
+                        </a>
+                        <a href="" class="catalog__content--item">
+                            <div class="catalog__content--item--img--wrap">
                                 <img class="catalog__content--item--img" src="/Pages/Catalog/images/2.7.png" alt="">
-                            </a>
-                            <p class="catalog__content--item--title">Halmar Chair</p>
-                            <p class="catalog__content--item--size">105x48x56</p>
-                            <p class="catalog__content--item--price">$87.90</p>
-                        </div>
-                        <div class="catalog__content--item">
-                            <a href="" class="catalog__content--item--img--wrap">
+                            </div>
+                            <p class="catalog__content--item--title">Carlo Rati Chair</p>
+                            <p class="catalog__content--item--size">87x70x67</p>
+                            <p class="catalog__content--item--price">$140.00</p>
+                        </a>
+                        <a href="" class="catalog__content--item">
+                            <div  class="catalog__content--item--img--wrap">
                                 <img class="catalog__content--item--img" src="/Pages/Catalog/images/2.8.png" alt="">
-                            </a>
-                            <p class="catalog__content--item--title">Halmar Chair</p>
-                            <p class="catalog__content--item--size">105x48x56</p>
-                            <p class="catalog__content--item--price">$87.90</p>
-                        </div>
-                        <div class="catalog__content--item">
-                            <a href="" class="catalog__content--item--img--wrap">
+                            </div>
+                            <p class="catalog__content--item--title">Twing Chair</p>
+                            <p class="catalog__content--item--size">112x52x58</p>
+                            <p class="catalog__content--item--price">$195.90</p>
+                        </a>
+                        <a href="" class="catalog__content--item">
+                            <div class="catalog__content--item--img--wrap">
                                 <img class="catalog__content--item--img" src="/Pages/Catalog/images/2.9.png" alt="">
-                            </a>
-                            <p class="catalog__content--item--title">Halmar Chair</p>
-                            <p class="catalog__content--item--size">105x48x56</p>
-                            <p class="catalog__content--item--price">$87.90</p>
-                        </div>
+                            </div>
+                            <p class="catalog__content--item--title">Maritime Chair</p>
+                            <p class="catalog__content--item--size">125x56x62</p>
+                            <p class="catalog__content--item--price">$195.90</p>
+                        </a>
                     </div>
                     <button class="catalog__content--button">Load More</button>
                 </div>
             </div>
         </div>
-    </div>
+    </div>  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
 </body>
 </html>
