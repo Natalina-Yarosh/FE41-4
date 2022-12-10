@@ -131,8 +131,8 @@ $font-Poppins: "Poppins", sans-serif;
   padding-bottom: 120px;
   overflow: hidden;
   @media (min-width: 1601px) {
-    padding-top: 190px;
-    padding-bottom: 147px;
+    padding-top: 170px;
+    padding-bottom: 133px;
   }
   @media(min-width: 1441px) and (max-width: 1600px){
     padding-top: 190px;
@@ -160,7 +160,10 @@ $font-Poppins: "Poppins", sans-serif;
         right: 0;
       }
       @media(min-width: 1441px) and (max-width: 1600px){
-        top: -10%;
+        background-image: url(../images/tablebig.png);
+        width: 626px;
+        height: 622px;
+        top: -20%;
         left: auto;
         right: 0;
       }
@@ -172,7 +175,7 @@ $font-Poppins: "Poppins", sans-serif;
         max-width: 951px;
       }
       @media(min-width: 1441px) and (max-width: 1600px){
-        max-width: 850px;
+        max-width: 900px;
       }
       &-title {
         font-family: $font-Poppins;
@@ -200,7 +203,7 @@ $font-Poppins: "Poppins", sans-serif;
           column-gap: 251px;
         }
         @media(min-width: 1441px) and (max-width: 1600px){
-          column-gap: 150px;
+          column-gap: 190px;
         }
       }
       &-order {
