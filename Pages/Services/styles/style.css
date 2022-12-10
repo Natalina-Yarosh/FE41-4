@@ -130,8 +130,8 @@
 }
 @media (min-width: 1601px) {
   .services {
-    padding-top: 190px;
-    padding-bottom: 147px;
+    padding-top: 170px;
+    padding-bottom: 133px;
   }
 }
 @media (min-width: 1441px) and (max-width: 1600px) {
@@ -167,7 +167,10 @@
 }
 @media (min-width: 1441px) and (max-width: 1600px) {
   .services .service::before {
-    top: -10%;
+    background-image: url(../images/tablebig.png);
+    width: 626px;
+    height: 622px;
+    top: -20%;
     left: auto;
     right: 0;
   }
@@ -183,7 +186,7 @@
 }
 @media (min-width: 1441px) and (max-width: 1600px) {
   .services .service__content {
-    max-width: 850px;
+    max-width: 900px;
   }
 }
 .services .service__content-title {
@@ -220,8 +223,8 @@
 }
 @media (min-width: 1441px) and (max-width: 1600px) {
   .services .service__content-orders {
-    -moz-column-gap: 150px;
-         column-gap: 150px;
+    -moz-column-gap: 190px;
+         column-gap: 190px;
   }
 }
 .services .service__content-order--title {
