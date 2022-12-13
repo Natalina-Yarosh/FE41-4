@@ -184,7 +184,9 @@ body {
   display: block;
   left: calc(100% + 17.5px);
   border-right: 1px solid #20201C;
-  height: auto;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill;
 }
 @media (min-width: 1441px) {
   .blog:nth-child(3n+2)::before {
@@ -197,7 +199,9 @@ body {
   display: block;
   right: calc(100% + 17.5px);
   border-left: 1px solid #20201C;
-  height: auto;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill;
 }
 @media (min-width: 1441px) {
   .blog:nth-child(3n+2)::after {
