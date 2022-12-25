@@ -160,6 +160,7 @@
   position: absolute;
   background-image: url(../images/table.png);
   background-repeat: no-repeat;
+  background-position: center;
 }
 @media (min-width: 1601px) and (max-width: 1920px) {
   .services .service::before {
@@ -169,6 +170,7 @@
     top: -20%;
     left: auto;
     right: 0;
+    background-position: center;
   }
 }
 @media (min-width: 1441px) and (max-width: 1600px) {
@@ -179,16 +181,18 @@
     top: -20%;
     left: auto;
     right: 0;
+    background-position: center;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .services .service::before {
     width: 322px;
     height: 320px;
-    top: 10%;
+    top: 30%;
     left: auto;
     right: 0;
     background-image: url(../images/table.png);
+    background-position: center;
   }
 }
 .services .service__content {
@@ -261,6 +265,7 @@
   .services .service__content-orders {
     -moz-column-gap: 40px;
          column-gap: 40px;
+    max-width: 378px;
   }
 }
 .services .service__content-order--title {
