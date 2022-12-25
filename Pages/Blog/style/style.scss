@@ -20,6 +20,9 @@ body{
   @media (min-width: 1441px) {
     margin-bottom: 152px;
   }
+  @media (min-width: 768px) and (max-width:1024px){
+    margin-bottom: 63px;
+}
   &__top {
     display: flex;
     justify-content: flex-end;
@@ -133,6 +136,9 @@ body{
     @media (min-width: 1441px) {
         margin-bottom: 197px;
     }
+    @media (min-width: 768px) and (max-width:1024px){
+      margin-bottom: 80px;
+  }
     &__title{
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
@@ -141,6 +147,12 @@ body{
         margin-bottom: 60px;
         color: #20201C;
         transform: translateX(2px);
+        @media (min-width: 768px) and (max-width:1024px){
+          margin-bottom: 80px;
+          font-size: 36px;
+          line-height: 43px;
+          margin-bottom: 32px;
+      }
     }
     &__wrap{
         display: flex;
@@ -151,6 +163,10 @@ body{
             row-gap: 59px;
             column-gap: 44px;
         }
+        @media (min-width: 768px) and (max-width:1024px){
+          row-gap: 44px;
+            column-gap: 23px;
+      }
     }
 }
 .blog{
@@ -160,6 +176,9 @@ body{
     flex-direction: column;
     @media (min-width: 1441px) {
       width: calc((100% - 44px - 44px)/3);
+  }
+  @media (min-width: 768px) and (max-width:1024px){
+    width: calc((100% - 23px - 23px)/3);
   }
     &:nth-child(3n + 2){
      &::before{
@@ -171,6 +190,9 @@ body{
       height: 100%;
       @media (min-width: 1441px) {
         left: calc(100% + 21.5px);
+      }
+      @media (min-width: 768px) and (max-width:1024px){
+        left: calc(100% + 11px);
       }
     }
     }
@@ -184,11 +206,17 @@ body{
       @media (min-width: 1441px) {
         right: calc(100% + 21.5px);
     }
+    @media (min-width: 768px) and (max-width:1024px){
+      right: calc(100% + 11px);
+    }
       }
     &__img--wrap{
         position: relative;
         display: block;
         margin-bottom: 32px;
+        @media (min-width: 768px) and (max-width:1024px){
+          margin-bottom: 20px;
+        }
         &::before{
             content: '';
             display: block;
@@ -196,6 +224,7 @@ body{
             @media (min-width: 1441px) {
                 padding-top: 44.4%;
             }
+            
         }
     }
     &__img{
@@ -218,6 +247,11 @@ body{
             font-size: 26px;
             line-height: 39px;
         }
+        @media (min-width: 768px) and (max-width:1024px){
+          font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        }
     }
     &__subtitle{
         font-family: 'Poppins', sans-serif;
@@ -231,6 +265,11 @@ body{
             line-height: 33px;
             margin-bottom: 53px;
         }
+        @media (min-width: 768px) and (max-width:1024px){
+          font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 10px;
+        }
     }
     &__data{
         margin-top: auto;
@@ -242,6 +281,10 @@ body{
         @media (min-width: 1441px) {
             font-size: 22px;
             line-height: 33px;
+        }
+        @media (min-width: 768px) and (max-width:1024px){
+          font-size: 14px;
+        line-height: 21px;
         }
     }
 }
