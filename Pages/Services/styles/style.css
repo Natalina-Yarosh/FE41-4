@@ -185,9 +185,10 @@
   .services .service::before {
     width: 322px;
     height: 320px;
-    top: -20%;
+    top: 10%;
     left: auto;
     right: 0;
+    background-image: url(../images/table.png);
   }
 }
 .services .service__content {
