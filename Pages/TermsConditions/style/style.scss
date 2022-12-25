@@ -20,6 +20,9 @@ body{
   @media (min-width: 1441px) {
     margin-bottom: 152px;
   }
+  @media (min-width: 768px) and (max-width: 1024px){
+    margin-bottom: 62px;
+  }
   &__top {
     display: flex;
     justify-content: flex-end;
@@ -130,6 +133,9 @@ body{
 }
 .terms{
     margin-bottom: 126px;
+    @media (min-width: 768px) and (max-width: 1024px){
+      margin-bottom: 80px;
+    }
     &__title{
         font-family: 'Poppins', sans-serif;
         font-weight: 600;
@@ -139,6 +145,11 @@ body{
         color: #20201C;
         @media (min-width: 1441px) {
             margin-bottom: 147px;
+          }
+          @media (min-width: 768px) and (max-width: 1024px){
+            font-size: 36px;
+        line-height: 43.02px;
+        margin-bottom: 80px;
           }
 
     }
@@ -156,6 +167,12 @@ body{
        line-height: 39px;
        padding: 5.5px;
        cursor: pointer;
+       @media (min-width: 768px) and (max-width: 1024px){
+        max-width: 169px;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 12px;
+      }
        &--first{
         background-color: #272725;
         color: #FFF;
@@ -174,10 +191,18 @@ body{
     font-size: 26px;
     line-height: 39px;
     color: #A3A3A3;
+    @media (min-width: 768px) and (max-width: 1024px){
+      margin-bottom: 22px;
+      font-size: 16px;
+      line-height: 24px;
+    }
     &:last-of-type{
       margin-bottom: 54px;
       @media (min-width: 1441px){
         margin-bottom: 60px;
+      }
+      @media (min-width: 768px) and (max-width: 1024px){
+        margin-bottom: 42px;
       }
     }
         &::before{
@@ -186,7 +211,12 @@ body{
             font-size: 36px;
             line-height: 43px;
             color: #20201C; 
+            @media (min-width: 768px) and (max-width: 1024px){
+              font-size: 22px;
+              line-height: 26.29px;
+            }
         }
+    //part RIGHTS AND OBLIGATIONS OF THE PARTIES
     &__rights::before{
       margin-right: -6px;
       @media (min-width: 1441px){
@@ -198,47 +228,83 @@ body{
       @media (min-width: 1441px){
         margin-right: 0px;
       }
-    }
-    &__subpoint--rights::before{
-      @media (min-width: 1441px){
-        margin-right: 0px;
+      &::before{
+        margin-right: 1px;
+        @media (min-width: 1441px){
+          margin-right: 0px;
+        }
       }
     }
   
     &__point--rights::before{
+      margin-right: -3px;
       @media (min-width: 1441px){
-        margin-right: -5px;
+        margin-right: -6px;
+      }
+      @media (min-width: 768px) and (max-width: 1024px){
+        margin-right: -2px;
       }
     }
     &__subpoint--last::before{
-      margin-right: -7px;
+      margin-right: -2px;
+      @media (min-width: 768px) and (max-width: 1024px){
+        margin-right: -2px;
+      }
     }
+    //part GENERAL PROVISIONS
     &__provisions::before{
       margin-right: 1px;
     }
     &__point--provisions::before{
       margin-right: -5px;
+      @media (min-width: 768px) and (max-width: 1024px){
+        margin-right: -3px;
+      }
     }
+    //part RESPONSIBILITY
     &__respons::before{
       margin-right: -7px;
+      @media (min-width: 768px) and (max-width: 1024px){
+        margin-right: -4px;
+      }
     }
     &__point--respons::before{
+      margin-right: -2px;
       @media (min-width: 1441px){
         margin-right: -6px;
       }
+      @media (min-width: 768px) and (max-width: 1024px){
+        margin-right: -4px;
+      }
     }
     &__subpoint--respons::before{
-      margin-right: -7px;
+      margin-right: -3px;
+      @media (min-width: 768px) and (max-width: 1024px){
+        margin-right: -4px;
+      }
+
     }
     &__content{
         margin-top: 20px;
+        @media (min-width: 768px) and (max-width: 1024px){
+          margin-top: 12px;
+        }
     }
     &__ul--list{
+      list-style-type: disc;
+      display: flex;
+      flex-direction: column;
         margin: 37px 20px 39px;
-        list-style-type: disc;
+        @media (min-width: 768px) and (max-width: 1024px){
+          margin: 23px 12px 25px;
+        }
     }
-    &__ul--item::before{
+    &__ul--item{
+      text-decoration: none;
+      color: #A3A3A3;
+      &::before{
         content: none;
+    }
     }
     &__title{
       font-family: 'Poppins', sans-serif;
@@ -246,6 +312,10 @@ body{
     font-size: 36px;
     line-height: 43px;
     color: #20201C;
+    @media (min-width: 768px) and (max-width: 1024px){
+      font-size: 22px;
+      line-height: 26.29px;
+    }
     }
     }
         

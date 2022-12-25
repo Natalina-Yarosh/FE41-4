@@ -27,6 +27,11 @@ body {
     margin-bottom: 152px;
   }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    margin-bottom: 62px;
+  }
+}
 .header__top {
   display: flex;
   justify-content: flex-end;
@@ -138,6 +143,11 @@ body {
 .terms {
   margin-bottom: 126px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .terms {
+    margin-bottom: 80px;
+  }
+}
 .terms__title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -149,6 +159,13 @@ body {
 @media (min-width: 1441px) {
   .terms__title {
     margin-bottom: 147px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .terms__title {
+    font-size: 36px;
+    line-height: 43.02px;
+    margin-bottom: 80px;
   }
 }
 .terms__btns {
@@ -166,6 +183,14 @@ body {
   line-height: 39px;
   padding: 5.5px;
   cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .terms__btn {
+    max-width: 169px;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 12px;
+  }
 }
 .terms__btn--first {
   background-color: #272725;
@@ -185,6 +210,13 @@ body {
   line-height: 39px;
   color: #A3A3A3;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .term {
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 .term:last-of-type {
   margin-bottom: 54px;
 }
@@ -193,12 +225,23 @@ body {
     margin-bottom: 60px;
   }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .term:last-of-type {
+    margin-bottom: 42px;
+  }
+}
 .term::before {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 36px;
   line-height: 43px;
   color: #20201C;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .term::before {
+    font-size: 22px;
+    line-height: 26.29px;
+  }
 }
 .term__rights::before {
   margin-right: -6px;
@@ -216,18 +259,34 @@ body {
     margin-right: 0px;
   }
 }
+.term__subpoint--rights::before {
+  margin-right: 1px;
+}
 @media (min-width: 1441px) {
   .term__subpoint--rights::before {
     margin-right: 0px;
   }
 }
+.term__point--rights::before {
+  margin-right: -3px;
+}
 @media (min-width: 1441px) {
   .term__point--rights::before {
-    margin-right: -5px;
+    margin-right: -6px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .term__point--rights::before {
+    margin-right: -2px;
   }
 }
 .term__subpoint--last::before {
-  margin-right: -7px;
+  margin-right: -2px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .term__subpoint--last::before {
+    margin-right: -2px;
+  }
 }
 .term__provisions::before {
   margin-right: 1px;
@@ -235,23 +294,62 @@ body {
 .term__point--provisions::before {
   margin-right: -5px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .term__point--provisions::before {
+    margin-right: -3px;
+  }
+}
 .term__respons::before {
   margin-right: -7px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .term__respons::before {
+    margin-right: -4px;
+  }
+}
+.term__point--respons::before {
+  margin-right: -2px;
 }
 @media (min-width: 1441px) {
   .term__point--respons::before {
     margin-right: -6px;
   }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .term__point--respons::before {
+    margin-right: -4px;
+  }
+}
 .term__subpoint--respons::before {
-  margin-right: -7px;
+  margin-right: -3px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .term__subpoint--respons::before {
+    margin-right: -4px;
+  }
 }
 .term__content {
   margin-top: 20px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .term__content {
+    margin-top: 12px;
+  }
+}
 .term__ul--list {
-  margin: 37px 20px 39px;
   list-style-type: disc;
+  display: flex;
+  flex-direction: column;
+  margin: 37px 20px 39px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .term__ul--list {
+    margin: 23px 12px 25px;
+  }
+}
+.term__ul--item {
+  text-decoration: none;
+  color: #A3A3A3;
 }
 .term__ul--item::before {
   content: none;
@@ -262,6 +360,12 @@ body {
   font-size: 36px;
   line-height: 43px;
   color: #20201C;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .term__title {
+    font-size: 22px;
+    line-height: 26.29px;
+  }
 }
 
 .term__content, .terms__list, .term__point--list {
