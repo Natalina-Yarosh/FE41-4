@@ -137,6 +137,12 @@ body {
     margin-top: 205px;
   }
 }
+@media (max-width: 1024px) {
+  .cards {
+    margin-top: 65px;
+    margin-bottom: 84px;
+  }
+}
 
 .card {
   display: grid;
@@ -339,6 +345,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     width: 100%;
+    max-width: 567px;
     margin-bottom: 436px;
   }
   .card__description-text::before {
@@ -346,8 +353,8 @@ body {
     width: 267px;
     height: 326px;
     display: block;
-    top: 50%;
-    left: 30%;
+    top: 35%;
+    left: 25%;
     position: absolute;
     background-image: url(../images/chairtablet.png);
     background-repeat: no-repeat;
@@ -371,6 +378,7 @@ body {
 @media (max-width: 1024px) {
   .card__description-features {
     display: inline-block;
+    margin-bottom: 48px;
   }
 }
 .card__description-feature:last-child {
@@ -495,7 +503,7 @@ body {
 }
 @media (max-width: 1024px) {
   .card__description-price--box {
-    padding: 10px;
+    padding: 7px;
     width: 100%;
     max-width: 100px;
   }
