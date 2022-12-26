@@ -162,6 +162,9 @@ body {
       padding-left: 24px;
       margin-top: 2px;
     }
+    @media (max-width: 1024px) {
+      display: none;
+    }
     &-main {
       position: relative;
       width: 100%;
@@ -186,6 +189,9 @@ body {
         height: 100%;
         object-fit: cover;
         object-position: center;
+        @media (max-width: 1024px) {
+          display: none;
+        }
       }
     }
     &-secondary {
@@ -290,7 +296,20 @@ body {
         font-size: 16px;
         line-height: 24px;
         width: 100%;
-        max-width: 567px;
+        margin-bottom: 436px;
+        &::before {
+          content: "";
+          width: 267px;
+          height: 326px;
+          display: block;
+          top: 50%;
+          left: 30%;
+          position: absolute;
+          background-image: url(../images/chairtablet.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          object-fit: contain;
+        }
       }
     }
     &-features {
