@@ -363,6 +363,26 @@ body {
        object-fit: contain;
   }
 }
+.card__description-swiper {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .card__description-swiper {
+    display: flex;
+    justify-content: center;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+    transform: translate(-65px, -24px);
+  }
+}
+.card__description-swiper--regular {
+  border-bottom: 2px solid #EEEEEE;
+  width: 34px;
+}
+.card__description-swiper--activ {
+  border-bottom: 2px solid #20201C;
+  width: 34px;
+}
 .card__description-features {
   display: flex;
   -moz-column-gap: 94px;

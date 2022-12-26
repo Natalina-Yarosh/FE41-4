@@ -317,6 +317,23 @@ body {
         }
       }
     }
+    &-swiper{
+      display: none;
+      @media (max-width: 1024px) {
+        display: flex;
+        justify-content: center;
+        column-gap: 5px;
+        transform: translate(-65px, -24px);
+      }
+      &--regular{
+        border-bottom: 2px solid #EEEEEE;
+        width: 34px;
+      }
+      &--activ{
+        border-bottom: 2px solid #20201C;
+        width: 34px;
+      }
+    }
    
     &-features {
       display: flex;
