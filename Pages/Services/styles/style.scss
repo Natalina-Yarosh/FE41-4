@@ -169,9 +169,37 @@ $font-Poppins: "Poppins", sans-serif;
         background-image: url(../images/tablebig.png);
         width: 626px;
         height: 622px;
-        top: -20%;
+        top: -15%;
         left: auto;
         right: 0;
+        background-position: center;
+      }
+      @media (min-width: 1301px) and (max-width: 1440px) {
+        background-image: url(../images/tablebig.png);
+        width: 626px;
+        height: 622px;
+        top: -15%;
+        left: auto;
+        right: 0;
+        background-position: center;
+      }
+      @media (min-width: 1025px) and (max-width: 1085px) {
+        width: 322px;
+        height: 320px;
+        top: 30%;
+        left: auto;
+        right: 0;
+        background-image: url(../images/table.png);
+        background-position: center;
+      }
+    
+      @media (min-width: 1086px) and (max-width: 1300px) {
+        width: 322px;
+        height: 320px;
+        top: 10%;
+        left: auto;
+        right: 0;
+        background-image: url(../images/table.png);
         background-position: center;
       }
       @media (min-width: 768px) and (max-width: 1024px) {
