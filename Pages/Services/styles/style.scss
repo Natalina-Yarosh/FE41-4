@@ -156,6 +156,8 @@ $font-Poppins: "Poppins", sans-serif;
       background-image: url(../images/table.png);
       background-repeat: no-repeat;
       background-position: center;
+      background-size: contain;
+
       @media (min-width: 1601px) and (max-width: 1920px) {
         width: 700px;
         height: 696px;
@@ -164,6 +166,7 @@ $font-Poppins: "Poppins", sans-serif;
         left: auto;
         right: 0;
         background-position: center;
+        background-size: contain;
       }
       @media (min-width: 1441px) and (max-width: 1600px) {
         background-image: url(../images/tablebig.png);
@@ -173,27 +176,20 @@ $font-Poppins: "Poppins", sans-serif;
         left: auto;
         right: 0;
         background-position: center;
+        background-size: contain;
       }
       @media (min-width: 1301px) and (max-width: 1440px) {
         background-image: url(../images/tablebig.png);
-        width: 626px;
+        // width: 626px;
+        width: 30%;
         height: 622px;
         top: -15%;
         left: auto;
         right: 0;
         background-position: center;
+        background-size: contain;
       }
-      @media (min-width: 1025px) and (max-width: 1085px) {
-        width: 322px;
-        height: 320px;
-        top: 30%;
-        left: auto;
-        right: 0;
-        background-image: url(../images/table.png);
-        background-position: center;
-      }
-    
-      @media (min-width: 1086px) and (max-width: 1300px) {
+      @media (min-width: 1085px) and (max-width: 1300px) {
         width: 322px;
         height: 320px;
         top: 10%;
@@ -201,6 +197,17 @@ $font-Poppins: "Poppins", sans-serif;
         right: 0;
         background-image: url(../images/table.png);
         background-position: center;
+        background-size: contain;
+      }
+      @media (min-width: 1025px) and (max-width: 1084px) {
+        width: 322px;
+        height: 320px;
+        top: 20%;
+        left: auto;
+        right: 0;
+        background-image: url(../images/table.png);
+        background-position: center;
+        background-size: contain;
       }
       @media (min-width: 768px) and (max-width: 1024px) {
         width: 322px;
@@ -210,6 +217,7 @@ $font-Poppins: "Poppins", sans-serif;
         right: 0;
         background-image: url(../images/table.png);
         background-position: center;
+        background-size: contain;
       }
     }
     &__content {
@@ -319,6 +327,7 @@ $font-Poppins: "Poppins", sans-serif;
           line-height: 39px;
           padding: 8.5px;
           background-color: transparent;
+          border: 1px solid #20201C;
           &:hover {
             background-color: #F5F5F5;
           }
