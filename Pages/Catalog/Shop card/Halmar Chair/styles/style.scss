@@ -148,6 +148,9 @@ body {
   @media (min-width: 1441px) {
     grid-template-columns: (1fr minmax(706px, 41%));
   }
+  @media (max-width: 1200px) and (min-width: 1025px){
+    grid-template-columns: 1fr 1fr;
+  }
   @media (max-width: 1024px) {
     grid-template-columns: 1fr;
   }
@@ -301,41 +304,30 @@ body {
         line-height: 24px;
         width: 100%;
         max-width: 567px;
-        margin-bottom: 436px;
-        &::before {
-          content: "";
-          width: 267px;
-          height: 326px;
-          display: block;
-          top: 35%;
-          left: 25%;
-          position: absolute;
-          background-image: url(../images/chairtablet.png);
-          background-repeat: no-repeat;
-          background-position: center;
-          object-fit: contain;
-        }
+        margin-bottom: 32px;
       }
     }
-    &-swiper{
+     &-image{
       display: none;
       @media (max-width: 1024px) {
-        display: flex;
-        justify-content: center;
-        column-gap: 5px;
-        transform: translate(-65px, -24px);
+        display: block;
+        position: relative;
+        margin: 0 auto 32px;
+        &::before{
+          content: "";
+          display: block;
+          padding-top: 122%;
+        }
+        &--tablet{
+          position: absolute;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          background-position: center;
+        }
       }
-      &--regular{
-        border-bottom: 2px solid #EEEEEE;
-        width: 34px;
-      }
-      &--activ{
-        border-bottom: 2px solid #20201C;
-        width: 34px;
-      }
-    }
-   
-    &-features {
+     }
+     &-features {
       display: flex;
       column-gap: 94px;
       margin-bottom: 28px;
