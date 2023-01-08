@@ -10,7 +10,12 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   <link rel="stylesheet" href="styles/style.css">
+  
   <title>Halmar Chair</title>
 </head>
 
@@ -98,29 +103,56 @@
     <div class="container">
       <div class="card">
         <div class="card__wrap">
-          <div class="card__wrap-main" id="main">
-            <img class="card__wrap-main card__wrap-main--img" src="images/halmarfrontbig.png"
-              alt="The picture of a chair">
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="card__wrap-main swiper-slide" id="main">
+                <img class="card__wrap-main card__wrap-main--img" src="images/halmarfrontbig.png"
+                  alt="The picture of a chair">
+              </div>
+              <div class="card__wrap-main swiper-slide" id="main">
+                <img class="card__wrap-main card__wrap-main--img" src="images/halmarfrontbig.png"
+                  alt="The picture of a chair">
+              </div>
+              <div class="card__wrap-main swiper-slide" id="main">
+                <img class="card__wrap-main card__wrap-main--img" src="images/halmarfrontbig.png"
+                  alt="The picture of a chair">
+              </div>
+            </div>
           </div>
-          <div class="card__wrap-secondary">
-            <a class="card__wrap-secondary card__wrap-secondary--link" href="#main"><img
-                class="card__wrap-secondary card__wrap-secondary--img" src="images/halmarfront.png"
-                alt="The picture of a chair"></a>
-            <a class="card__wrap-secondary card__wrap-secondary--link" href="#main"><img
-                class="card__wrap-secondary card__wrap-secondary--img" src="images/halmarside.png"
-                alt="The picture of a chair"></a>
-            <a class="card__wrap-secondary card__wrap-secondary--link" href="#main"><img
-                class="card__wrap-secondary card__wrap-secondary--img" src="images/halmarback.png"
-                alt="The picture of a chair"></a>
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="card__wrap-secondary swiper-wrapper">
+              <a class="card__wrap-secondary card__wrap-secondary--link swiper-slide" href="#main"><img
+                  class="card__wrap-secondary card__wrap-secondary--img" src="images/halmarfront.png"
+                  alt="The picture of a chair"></a>
+              <a class="card__wrap-secondary card__wrap-secondary--link swiper-slide" href="#main"><img
+                  class="card__wrap-secondary card__wrap-secondary--img" src="images/halmarside.png"
+                  alt="The picture of a chair"></a>
+              <a class="card__wrap-secondary card__wrap-secondary--link swiper-slide" href="#main"><img
+                  class="card__wrap-secondary card__wrap-secondary--img" src="images/halmarback.png"
+                  alt="The picture of a chair"></a>
+            </div>
           </div>
         </div>
         <article class="card__description">
           <h2 class="card__description-title">Halmar Chair</h2>
           <p class="card__description-text">A very popular model, often chosen by our customers for arranging
             dining areas and living rooms.</p>
-            <div class="card__description-image">
-              <image class="card__description-image card__description-image--tablet" src="images/chairtablet.png" alt="The image of Halmar chair"></image>
+
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="card__description-image swiper-slide">
+                  <image class="card__description-image card__description-image--tablet" src="images/chairtablet.png" alt="The image of Halmar chair"></image>
+                </div>
+                <div class="card__description-image swiper-slide">
+                  <image class="card__description-image card__description-image--tablet" src="images/chairtablet.png" alt="The image of Halmar chair"></image>
+                </div>
+                <div class="card__description-image swiper-slide">
+                  <image class="card__description-image card__description-image--tablet" src="images/chairtablet.png" alt="The image of Halmar chair"></image>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
+
           <div class="card__description-features">
             <div class="card__description-feature">
               <h3 class="card__description-feature card__description-feature--title">Characteristics</h3>
@@ -322,6 +354,28 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper(".mySwiper2", {
+    loop: true,
+    spaceBetween: 10,
+    pagination: {
+          el: ".swiper-pagination",
+        },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
+</script>
 </body>
 
 </html>
