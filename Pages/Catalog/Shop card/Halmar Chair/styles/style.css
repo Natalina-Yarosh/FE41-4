@@ -361,7 +361,7 @@ body {
   .card__description-image {
     display: block;
     position: relative;
-    margin: 0 auto 78px;
+    margin: 0 auto 32px;
     -o-object-position: center;
        object-position: center;
     height: 100%;
@@ -1037,18 +1037,19 @@ body {
 @media (max-width: 1024px) {
   .mySwiper2 {
     max-width: 295px;
+    margin-bottom: 46px;
   }
 }
 
 .swiper-pagination-bullet {
-  width: 20px;
-  height: 3px;
-  border-radius: 2px;
-  background: red;
+  width: 34px;
+  height: 2px;
+  border-radius: 0px;
+  background: #EEEEEE;
 }
 
 .swiper-pagination-bullet-active {
-  background: red;
+  background: #20201C;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets {

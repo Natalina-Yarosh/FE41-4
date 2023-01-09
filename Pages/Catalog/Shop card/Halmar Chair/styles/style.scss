@@ -13,7 +13,7 @@ $font-Poppins: 'Poppins', sans-serif;
   }
 }
 body {
-  background: #f5f5f5;
+  background:#f5f5f5;
 }
 .header {
   &__top {
@@ -314,7 +314,7 @@ body {
         position: relative;
         // max-width: 295px;
         // height: 326px;
-        margin: 0 auto 78px;
+        margin: 0 auto 32px;
         object-position: center;
         
         height: 100%;
@@ -911,41 +911,34 @@ body {
     }
   }
 }
-
 .mySwiper2 {
   width: 100%;
   max-width: 334px;
 
   @media(max-width:1024px){
     max-width: 295px;
+    margin-bottom:  46px;
   }
 }
-
-
 .swiper-pagination-bullet{
-  width: 20px;
-  height: 3px;
-  border-radius: 2px;
-  background: red;
+  width: 34px;
+  height: 2px;
+  border-radius: 0px;
+  background: #EEEEEE;
 }
-
 .swiper-pagination-bullet-active{
-  background: red;
+  background: #20201C;
 }
-
 .swiper-horizontal>.swiper-pagination-bullets{
   bottom: 0;
   display: none;
-
   @media(max-width:1024px){
     display: block;
   }
 }
-
 .card__wrap-secondary--link.swiper-slide{
   border: 0.5px solid #A3A3A3;
 }
-
 .card__wrap-secondary--link.swiper-slide.swiper-slide-thumb-active{
   border: 1px solid #20201C;
 }
