@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+<link rel="stylesheet" href="/Pages/Catalog/style/style.css">
+    <title>Document</title>
+</head>
+<body> 
+    <header class="header">
+        <div class="header__top-wrap">
+          <div class="container">
+            <div class="header__top">
+              <a href="#" class="header__top-heart header__top-heart--amount">
+                <svg class="header__top-img" width="28" height="23" viewBox="0 0 28 23" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.5084 21.7174L24.2747 11.9562C26.6741 9.54608 27.0238 5.60546 24.757 3.08684C24.1885 2.45214 23.4966 1.93994 22.7233 1.58155C21.9501 1.22316 21.1119 1.02611 20.2599 1.00242C19.4079 0.978738 18.56 1.12892 17.7681 1.4438C16.9761 1.75868 16.2567 2.23163 15.6538 2.83377L13.8211 4.67755L12.2416 3.08684C9.83017 0.688728 5.88745 0.339254 3.36749 2.60481C2.73245 3.17299 2.21998 3.86461 1.8614 4.63742C1.50282 5.41023 1.30566 6.248 1.28197 7.09953C1.25827 7.95107 1.40853 8.7985 1.72358 9.59003C2.03862 10.3816 2.51183 11.1006 3.11429 11.7032L13.1339 21.7174C13.3167 21.8984 13.5637 22 13.8211 22C14.0785 22 14.3255 21.8984 14.5084 21.7174V21.7174Z"
+                    stroke="#20201C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="header__top-amount">2</span>
+              </a>
+              <div class="header__top-nav">
+                <li class="header__top-item">
+                  <a href="#" class="header__top-link">Wish list</a>
+                </li>
+                <li class="header__top-item">
+                  <a href="#" class="header__top-link">About us</a>
+                </li>
+                <li class="header__top-item">
+                  <a href="#" class="header__top-link">Contact us</a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="header__bottom">
+            <div class="header__logo">
+              <a href="#" class="header__logo-link">
+                <svg class="header__logo-img" width="113" height="33" viewBox="0 0 113 33" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.84375 33V0.210938H18.6094V2.32031H3.46875V15.3281H18.1172V17.4375H3.46875V30.7969H18.9844V33H0.84375ZM35.2266 2.57812H27.3047V30.7031H35.2266C37.3828 30.7031 39.2344 30.5234 40.7812 30.1641C42.3438 29.8047 43.6875 29.2422 44.8125 28.4766C46.6406 27.2578 48.0703 25.6016 49.1016 23.5078C50.1484 21.4141 50.6719 19.125 50.6719 16.6406C50.6719 14.1562 50.1484 11.8672 49.1016 9.77344C48.0703 7.66406 46.6406 6 44.8125 4.78125C43.6875 4.01562 42.3438 3.46094 40.7812 3.11719C39.2344 2.75781 37.3828 2.57812 35.2266 2.57812ZM35.8828 0.210938C38.3828 0.210938 40.5078 0.453125 42.2578 0.9375C44.0234 1.40625 45.6094 2.15625 47.0156 3.1875C49.0781 4.71875 50.6797 6.66406 51.8203 9.02344C52.9766 11.3672 53.5547 13.8906 53.5547 16.5938C53.5547 19.2812 52.9766 21.8047 51.8203 24.1641C50.6797 26.5078 49.0781 28.4453 47.0156 29.9766C45.6094 31.0234 44.0156 31.7891 42.2344 32.2734C40.4531 32.7578 38.3359 33 35.8828 33H24.5156V0.210938H35.8828ZM59.625 33V0.210938H77.3906V2.32031H62.25V15.3281H76.8984V17.4375H62.25V30.7969H77.7656V33H59.625ZM83.2969 33V0.210938H86.0391L110.039 28.8281V0.210938H112.664V33H110.227L85.9219 4.00781V33H83.2969Z"
+                    fill="#20201C" />
+                </svg>
+              </a>
+            </div>
+            <nav class="header__nav">
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Menu</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Shop</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Collections</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#" class="header__nav-link">Blog</a>
+              </li>
+            </nav>
+            <div class="header__buttons">
+              <button class="header__button">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14.5 25.5C20.299 25.5 25 20.799 25 15C25 9.20101 20.299 4.5 14.5 4.5C8.70101 4.5 4 9.20101 4 15C4 20.799 8.70101 25.5 14.5 25.5Z"
+                    stroke="#20201C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M21.9248 22.4258L27.9998 28.5008" stroke="#20201C" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+              <button class="header__button">
+                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16 20.5C20.4183 20.5 24 16.9183 24 12.5C24 8.08172 20.4183 4.5 16 4.5C11.5817 4.5 8 8.08172 8 12.5C8 16.9183 11.5817 20.5 16 20.5Z"
+                    stroke="#20201C" stroke-width="2" stroke-miterlimit="10" />
+                  <path
+                    d="M3.875 27.4992C5.10367 25.3706 6.87104 23.603 8.99944 22.374C11.1278 21.1451 13.5423 20.498 16 20.498C18.4577 20.498 20.8722 21.1451 23.0006 22.374C25.129 23.603 26.8963 25.3706 28.125 27.4992"
+                    stroke="#20201C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="banner">
+        <div class="container banner__container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide mySwiper__slide">
+                <div class="sale">
+                    <h2 class="sale__title">Sale</h2>
+                    <p class="sale__subtitle">Comfortable dining chairs in three colors</p>
+                    <div class="sale__price">
+                        <p class="sale__cost">$456.99</p>
+                        <p class="sale__discount">$399.99</p>
+                    </div>
+                    <button class="sale__btn">Shop now</button>
+                </div>
+                <div class="sale__item--wrap">
+                    <img class="sale__item" src="/Pages/Catalog/images/sale1.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide mySwiper__slide">
+                <div class="sale">
+                    <h2 class="sale__title">Sale</h2>
+                    <p class="sale__subtitle">Modern chair in two colors with tree legs</p>
+                    <div class="sale__price">
+                        <p class="sale__cost">$240.99</p>
+                        <p class="sale__discount">$210.99</p>
+                    </div>
+                    <button class="sale__btn">Shop now</button>
+                </div>
+                <div class="sale__item--wrap">
+                    <img class="sale__item" src="/Pages/Catalog/images/sale2.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide mySwiper__slide">
+                <div class="sale">
+                    <h2 class="sale__title">Sale</h2>
+                    <p class="sale__subtitle">Shell chair with finger-effect upholstery</p>
+                    <div class="sale__price">
+                        <p class="sale__cost">$578.80</p>
+                        <p class="sale__discount">$517.80</p>
+                    </div>
+                    <button class="sale__btn">Shop now</button>
+                </div>
+                <div class="sale__item--wrap">
+                    <img class="sale__item" src="/Pages/Catalog/images/sale3.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 6.03906L22 15.9874L12 25.9357" stroke="#20201C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+            </div>
+            <div class="swiper-button-prev">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 25.9355L10 15.9872L20 6.03891" stroke="#20201C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+
+    <div class="catalog">
+        <div class="container">
+            <div class="catalog__wrap">
+                <div class="catalog__filters">
+                    <div class="catalog__filters--title">
+                        <h3 class="catalog__filters--subtitle">Filters</h3>
+                        <button class="catalog__filters--btn">Clear All</button>
+                    </div>
+                    <div class="catalog__filter">
+                        <div class="catalog__filter--header">
+                            <a href="" class="catalog__filter--header--btn">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24 15L16.5 22L9 15" stroke="#20201C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </a>
+                            <p class="catalog__filter--header--title">Chair design</p>
+                        </div>
+                        <a href="" class="catalog__filter--choice">All Chairs</a>
+                        <a href="" class="catalog__filter--choice">Dining Chairs</a>
+                        <a href="" class="catalog__filter--choice">Lounge Chairs</a>
+                        <a href="" class="catalog__filter--choice">Benches</a>
+                        <a href="" class="catalog__filter--choice">Office Chairs</a>
+                    </div>
+                    <div class="catalog__filter">
+                        <div class="catalog__filter--header">
+                            <a href="" class="catalog__filter--header--btn">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24 15L16.5 22L9 15" stroke="#20201C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </a>
+                            <p class="catalog__filter--header--title">Upholstery color</p>
+                        </div>
+                        <div class="catalog__filter--content">
+                            <div class="catalog__filter--content--column">
+                                <a href="" class="catalog__filter--choice">Brown</a>
+                                <a href="" class="catalog__filter--choice">Beige</a>
+                                <a href="" class="catalog__filter--choice">Black</a>
+                                <a href="" class="catalog__filter--choice">White</a>
+                                <a href="" class="catalog__filter--choice">Gray</a>
+                            </div>
+                            <div class="catalog__filter--content--column">
+                                <a href="" class="catalog__filter--choice">Red</a>
+                                <a href="" class="catalog__filter--choice">Blue</a>
+                                <a href="" class="catalog__filter--choice">Orange</a>
+                                <a href="" class="catalog__filter--choice">Green</a>
+                                <a href="" class="catalog__filter--choice">Yellow</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__filter">
+                        <div class="catalog__filter--header">
+                            <a href="" class="catalog__filter--header--btn">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24 15L16.5 22L9 15" stroke="#20201C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </a>
+                            <p class="catalog__filter--header--title">Material</p>
+                        </div>
+                        <a href="" class="catalog__filter--choice">Ash</a>
+                        <a href="" class="catalog__filter--choice">Maple</a>
+                        <a href="" class="catalog__filter--choice">Oak</a>
+                        <a href="" class="catalog__filter--choice">Pine</a>
+                        <a href="" class="catalog__filter--choice">Walnut</a>
+                        <a href="" class="catalog__filter--choice">Metal</a>
+                    </div>
+                    <div class="catalog__filter">
+                        <div class="catalog__filter--header">
+                            <a href="" class="catalog__filter--header--btn">
+                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24 15L16.5 22L9 15" stroke="#20201C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                            </a>
+                            <p class="catalog__filter--header--title">Price range</p>
+                        </div>
+                        <div class="catalog__filter--range">
+                            <img class="range"src="/Pages/Catalog/images/range.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__content">
+                    <div class="catalog__content--header">
+                      <div class="catalog__content--humburger">
+                        <a class="catalog__content--hum" href="">
+                          <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.75 9.5H14.25" stroke="#20201C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M1.78125 5.9375H17.2188" stroke="#20201C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.71875 13.0625H11.2813" stroke="#20201C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                            
+                        </a>
+                        <p class="catalog__content--hum--text">Filters</p>
+                      </div>
+                      <div class="catalog__content--head">
+                          <p class="catalog__content--text">Sort by</p>
+                          <div class="catalog__content--btn">
+                              <p class="catalog__content--btn--text">Price low to high</p>
+                              <a class="catalog__content--btn--label" href="">
+                                  <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M17 2L9.5 9L2 2" stroke="#20201C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg> 
+                              </a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="catalog__content--wrap">
+                        <a href="" class="catalog__content--item">
+                            <div class="catalog__content--item--img--wrap">
+                                <img class="catalog__content--item--img" src="/Pages/Catalog/images/chair2.1.png" alt="">
+                            </div>
+                            <div class="catalog__content--info">
+                              <p class="catalog__content--item--title">Halmar Chair</p>
+                              <p class="catalog__content--item--size">105x48x56</p>
+                              <p class="catalog__content--item--price">$87.90</p>
+                            </div>
+                        </a>
+                        <a href="" class="catalog__content--item">
+                            <div class="catalog__content--item--img--wrap">
+                                <img class="catalog__content--item--img" src="/Pages/Catalog/images/2.2.png" alt="">
+                            </div>
+                            <div class="catalog__content--info">
+                              <p class="catalog__content--item--title">Kira Chair</p>
+                              <p class="catalog__content--item--size">105x48x56</p>
+                              <p class="catalog__content--item--price">$88.90</p>
+                            </div>
+                        </a>
+                        <a href="" class="catalog__content--item">
+                            <div class="catalog__content--item--img--wrap">
+                                <img class="catalog__content--item--img" src="/Pages/Catalog/images/2.3.png" alt="">
+                            </div>
+                            <div class="catalog__content--info">
+                              <p class="catalog__content--item--title">Ashby Dining Chair</p>
+                              <p class="catalog__content--item--size">102x46x56</p>
+                              <p class="catalog__content--item--price">$95.40</p>
+                            </div>
+                        </a>
+                        <a href="" class="catalog__content--item">
+                            <div class="catalog__content--item--img--wrap">
+                                <img class="catalog__content--item--img" src="/Pages/Catalog/images/2.4.png" alt="">
+                            </div>
+                            <div class="catalog__content--info">
+                              <p class="catalog__content--item--title">Masculo Dining Chair</p>
+                              <p class="catalog__content--item--size">108x51x57</p>
+                              <p class="catalog__content--item--price">$97.90</p>
+                            </div>
+                        </a>
+                        <a href="" class="catalog__content--item">
+                            <div class="catalog__content--item--img--wrap">
+                                <img class="catalog__content--item--img" src="/Pages/Catalog/images/2.5.png" alt="">
+                            </div>
+                            <div class="catalog__content--info">
+                              <p class="catalog__content--item--title">Osmo Armchair</p>
+                              <p class="catalog__content--item--size">87x67x78</p>
+                              <p class="catalog__content--item--price">$120.99</p>
+                            </div>
+                        </a>
+                        <a href="" class="catalog__content--item">
+                            <div href="" class="catalog__content--item--img--wrap">
+                                <img class="catalog__content--item--img" src="/Pages/Catalog/images/2.6.png" alt="">
+                            </div>
+                            <div class="catalog__content--info">
+                              <p class="catalog__content--item--title">Tamashii Chair</p>
+                              <p class="catalog__content--item--size">110x58x63</p>
+                              <p class="catalog__content--item--price">$135.40</p>
+                            </div>
+                        </a>
+                        <a href="" class="catalog__content--item">
+                            <div class="catalog__content--item--img--wrap">
+                                <img class="catalog__content--item--img" src="/Pages/Catalog/images/2.7.png" alt="">
+                            </div>
+                            <div class="catalog__content--info">
+                              <p class="catalog__content--item--title">Carlo Rati Chair</p>
+                              <p class="catalog__content--item--size">87x70x67</p>
+                              <p class="catalog__content--item--price">$140.00</p>
+                            </div>
+                        </a>
+                        <a href="" class="catalog__content--item">
+                            <div  class="catalog__content--item--img--wrap">
+                                <img class="catalog__content--item--img" src="/Pages/Catalog/images/2.8.png" alt="">
+                            </div>
+                            <div class="catalog__content--info">
+                              <p class="catalog__content--item--title">Twing Chair</p>
+                              <p class="catalog__content--item--size">112x52x58</p>
+                              <p class="catalog__content--item--price">$195.90</p>
+                            </div>
+                        </a>
+                        <a href="" class="catalog__content--item">
+                            <div class="catalog__content--item--img--wrap">
+                                <img class="catalog__content--item--img" src="/Pages/Catalog/images/2.9.png" alt="">
+                            </div>
+                            <div class="catalog__content--info">
+                              <p class="catalog__content--item--title">Maritime Chair</p>
+                              <p class="catalog__content--item--size">125x56x62</p>
+                              <p class="catalog__content--item--price">$195.90</p>
+                            </div>
+                        </a>
+                    </div>
+                    <button class="catalog__content--button">Load More</button>
+                </div>
+            </div>
+        </div>
+    </div>  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__subs">
+            <div class="footer__logo">
+              <a href="#" class="footer__logo-link">
+                <svg class="footer__logo-img" width="113" height="33" viewBox="0 0 113 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.84375 33V0.210938H18.6094V2.32031H3.46875V15.3281H18.1172V17.4375H3.46875V30.7969H18.9844V33H0.84375ZM35.2266 2.57812H27.3047V30.7031H35.2266C37.3828 30.7031 39.2344 30.5234 40.7812 30.1641C42.3438 29.8047 43.6875 29.2422 44.8125 28.4766C46.6406 27.2578 48.0703 25.6016 49.1016 23.5078C50.1484 21.4141 50.6719 19.125 50.6719 16.6406C50.6719 14.1562 50.1484 11.8672 49.1016 9.77344C48.0703 7.66406 46.6406 6 44.8125 4.78125C43.6875 4.01562 42.3438 3.46094 40.7812 3.11719C39.2344 2.75781 37.3828 2.57812 35.2266 2.57812ZM35.8828 0.210938C38.3828 0.210938 40.5078 0.453125 42.2578 0.9375C44.0234 1.40625 45.6094 2.15625 47.0156 3.1875C49.0781 4.71875 50.6797 6.66406 51.8203 9.02344C52.9766 11.3672 53.5547 13.8906 53.5547 16.5938C53.5547 19.2812 52.9766 21.8047 51.8203 24.1641C50.6797 26.5078 49.0781 28.4453 47.0156 29.9766C45.6094 31.0234 44.0156 31.7891 42.2344 32.2734C40.4531 32.7578 38.3359 33 35.8828 33H24.5156V0.210938H35.8828ZM59.625 33V0.210938H77.3906V2.32031H62.25V15.3281H76.8984V17.4375H62.25V30.7969H77.7656V33H59.625ZM83.2969 33V0.210938H86.0391L110.039 28.8281V0.210938H112.664V33H110.227L85.9219 4.00781V33H83.2969Z" fill="#20201C"/>
+                  </svg>                
+              </a>
+              <p class="footer__logo-description">Comfortable chairs for ofiice and home</p>
+            </div>
+            <p class="footer__subs-text">Subscripe Now</p>
+            <form action="#" class="footer__sub">
+              <input type="email" class="footer__sub-field" placeholder="E-mail">
+              <button class="footer__sub-btn">Subscribe</button>
+            </form>
+          </div>
+          <div class="footer__pages-wrap">
+            <div class="footer__pages">
+            <article class="footer__page">
+              <h3 class="footer__page-menu">Company</h3>
+              <a href="#" class="footer__page-link">
+                <p class="footer__page-name">Terms & Conditions</p>
+              </a>
+              <a href="#" class="footer__page-link">
+                <p class="footer__page-name">Privacy Policy</p>
+              </a>
+              <a href="#" class="footer__page-link">
+                <p class="footer__page-name">FAQs</p>
+              </a>
+            </article>
+            <article class="footer__page">
+              <h3 class="footer__page-menu">About</h3>
+              <a href="#" class="footer__page-link">
+                <p class="footer__page-name">Blog</p>
+              </a>
+              <a href="#" class="footer__page-link">
+                <p class="footer__page-name">Contact</p>
+              </a>
+              <a href="#" class="footer__page-link">
+                <p class="footer__page-name">Store</p>
+              </a>
+            </article>
+            <article class="footer__page">
+              <h3 class="footer__page-menu">Helpful Links</h3>
+              <a href="#" class="footer__page-link">
+                <p class="footer__page-name">Services</p>
+              </a>
+              <a href="#" class="footer__page-link">
+                <p class="footer__page-name">Return & Exchange</p>
+              </a>
+            </article>
+            </div>
+            <div class="footer__contacts">
+              <div class="footer__contact">
+                <h3 class="footer__page-menu">Contact Us</h3>
+                <div class="footer__contact-medias">
+                  <div class="footer__contact-media">
+                  <svg class="footer__contact-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.925 2C17.6212 2.45522 19.1678 3.34857 20.4097 4.59039C21.6515 5.83221 22.5448 7.37882 23 9.075" stroke="#20201C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.8875 5.86255C15.9076 6.13348 16.838 6.66928 17.5844 7.41564C18.3307 8.162 18.8665 9.0924 19.1375 10.1125" stroke="#20201C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7.5625 12.6C8.59153 14.7251 10.3098 16.439 12.4375 17.4625C12.5944 17.5369 12.768 17.569 12.9412 17.5559C13.1143 17.5427 13.2811 17.4847 13.425 17.3875L16.55 15.3C16.6881 15.2064 16.8476 15.1493 17.0137 15.134C17.1799 15.1187 17.3472 15.1457 17.5 15.2125L23.35 17.725C23.5499 17.8083 23.717 17.9549 23.8254 18.1424C23.9338 18.3298 23.9776 18.5477 23.95 18.7625C23.7646 20.2097 23.0582 21.5397 21.9631 22.5038C20.8679 23.4678 19.459 23.9997 18 24C13.4913 24 9.1673 22.209 5.97919 19.0209C2.79107 15.8327 1 11.5087 1 7.00004C1.00033 5.54104 1.53227 4.13214 2.49628 3.03699C3.4603 1.94183 4.79033 1.23546 6.2375 1.05004C6.4523 1.02245 6.67021 1.06623 6.85768 1.17465C7.04515 1.28307 7.19178 1.4501 7.275 1.65004L9.7875 7.51254C9.85284 7.66297 9.88017 7.82717 9.86709 7.99066C9.85401 8.15415 9.80092 8.31191 9.7125 8.45004L7.625 11.625C7.53206 11.7686 7.47752 11.9337 7.46657 12.1044C7.45563 12.2751 7.48866 12.4457 7.5625 12.6V12.6Z" stroke="#20201C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  <a class="footer__contact-link" href="tel:+91 9999 999 999">+91 9999 999 999</a>
+                </div>
+                <div class="footer__contact-media">
+                  <svg class="footer__contact-icon" width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1H25V18C25 18.2652 24.8946 18.5196 24.7071 18.7071C24.5196 18.8946 24.2652 19 24 19H2C1.73478 19 1.48043 18.8946 1.29289 18.7071C1.10536 18.5196 1 18.2652 1 18V1Z" stroke="#20201C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 1L13 12L1 1" stroke="#20201C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                  <a class="footer__contact-link" href="email:edenmail.com">edenmail.com</a>
+                </div>
+              </div>
+              </div>
+              <div class="footer__media">
+                <a href="#" class="footer__media-link">
+                  <svg class="footer__media-tw" width="26" height="22" viewBox="0 0 26 22"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.321 5.00045C11.321 2.25045 13.6335 -0.0370454 16.3835 0.000454611C17.3465 0.0115731 18.2859 0.300603 19.0886 0.832799C19.8914 1.365 20.5233 2.11771 20.9085 3.00045H25.321L21.2835 7.03795C21.0229 11.0937 19.2276 14.8979 16.2625 17.6773C13.2974 20.4566 9.38506 22.0025 5.32099 22.0005C1.32099 22.0005 0.320988 20.5005 0.320988 20.5005C0.320988 20.5005 4.32099 19.0005 6.32099 16.0005C6.32099 16.0005 -1.67901 12.0005 0.320988 1.00045C0.320988 1.00045 5.32099 6.00045 11.321 7.00045V5.00045Z" />
+                    </svg>
+                </a>
+                <a href="#" class="footer__media-link">
+                  <svg class="footer__media-inst" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 18C15.7614 18 18 15.7614 18 13C18 10.2386 15.7614 8 13 8C10.2386 8 8 10.2386 8 13C8 15.7614 10.2386 18 13 18Z"  stroke-width="2" stroke-miterlimit="10"/>
+                    <path d="M18.5 1.5H7.5C4.18629 1.5 1.5 4.18629 1.5 7.5V18.5C1.5 21.8137 4.18629 24.5 7.5 24.5H18.5C21.8137 24.5 24.5 21.8137 24.5 18.5V7.5C24.5 4.18629 21.8137 1.5 18.5 1.5Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19.5 8C20.3284 8 21 7.32843 21 6.5C21 5.67157 20.3284 5 19.5 5C18.6716 5 18 5.67157 18 6.5C18 7.32843 18.6716 8 19.5 8Z" fill="white"/>
+                    </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__corporations">
+          <div class="footer__corporation">  
+            <svg class="footer__corporation-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="black" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M9.22152 15.85C9.22152 14.3767 9.51618 13.094 10.1055 12.002C10.6948 10.8927 11.5095 10.0347 12.5495 9.428C13.6068 8.82133 14.8115 8.518 16.1635 8.518C17.9142 8.518 19.3528 8.94267 20.4795 9.792C21.6235 10.6413 22.3775 11.82 22.7415 13.328H20.1935C19.9508 12.4613 19.4742 11.7767 18.7635 11.274C18.0702 10.7713 17.2035 10.52 16.1635 10.52C14.8115 10.52 13.7195 10.988 12.8875 11.924C12.0555 12.8427 11.6395 14.1513 11.6395 15.85C11.6395 17.566 12.0555 18.892 12.8875 19.828C13.7195 20.764 14.8115 21.232 16.1635 21.232C17.2035 21.232 18.0702 20.9893 18.7635 20.504C19.4568 20.0187 19.9335 19.3253 20.1935 18.424H22.7415C22.3602 19.88 21.5975 21.05 20.4535 21.934C19.3095 22.8007 17.8795 23.234 16.1635 23.234C14.8115 23.234 13.6068 22.9307 12.5495 22.324C11.5095 21.7173 10.6948 20.8593 10.1055 19.75C9.51618 18.6407 9.22152 17.3407 9.22152 15.85Z" fill="black"/>
+              </svg>
+            <p class="footer__corporation-text">2020 Eden Inc. All rights reserved</p>
+          </div>
+          <div class="footer__corporation-page">
+            <a href="#" class="footer__corporation-link">
+              <p class="footer__corporation-name">FAQ</p>
+            </a>
+            <a href="#" class="footer__corporation-link">
+              <p class="footer__corporation-name">Privacy</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+      </script>
+</body>
+</html>
